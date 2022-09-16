@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--기기 연결하기-->
         <scene sceneID="qnU-QB-Gy2">
             <objects>
                 <viewController id="K8a-d8-jNH" sceneMemberID="viewController">
@@ -18,79 +18,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기기 연결하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJ1-RQ-tpz">
-                                <rect key="frame" x="147" y="74" width="120" height="26.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Qza-f7-Rm4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연결할 기기를 선택해주세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjf-bn-bCi">
-                                <rect key="frame" x="88" y="150.5" width="238" height="26.5"/>
+                                <rect key="frame" x="88" y="138" width="238" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhD-kd-gfE">
-                                <rect key="frame" x="20" y="207" width="374" height="129"/>
+                                <rect key="frame" x="27" y="194.5" width="360" height="120"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0b-ct-scc">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="8po-ho-xMP"/>
+                                            <constraint firstAttribute="width" constant="360" id="zeN-4W-q2u"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <segue destination="JoR-SR-s3o" kind="show" id="lco-Se-tE8"/>
+                                        </connections>
+                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tq6-tl-Hzl">
-                                        <rect key="frame" x="7" y="0.0" width="360" height="129"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="120"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-connect-sensor-hub-2-3" translatesAutoresizingMaskIntoConstraints="NO" id="RZ4-VG-oC0">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="129"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="180" id="f0v-hQ-zeg"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW8-i9-asG">
-                                                <rect key="frame" x="180" y="51" width="180" height="27.5"/>
+                                                <rect key="frame" x="180" y="46.5" width="180" height="27.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="360" id="Rde-FR-gfa"/>
+                                            <constraint firstAttribute="width" constant="360" id="esW-zF-tgo"/>
+                                            <constraint firstAttribute="height" constant="120" id="fmf-lV-Uld"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Tq6-tl-Hzl" secondAttribute="bottom" id="4Xe-Az-sKz"/>
-                                    <constraint firstItem="Tq6-tl-Hzl" firstAttribute="centerY" secondItem="IhD-kd-gfE" secondAttribute="centerY" id="9WQ-3i-rJt"/>
-                                    <constraint firstItem="Tq6-tl-Hzl" firstAttribute="top" secondItem="IhD-kd-gfE" secondAttribute="top" id="CpM-OY-6mO"/>
-                                    <constraint firstItem="Tq6-tl-Hzl" firstAttribute="centerX" secondItem="IhD-kd-gfE" secondAttribute="centerX" id="flr-RL-zd8"/>
+                                    <constraint firstItem="Tq6-tl-Hzl" firstAttribute="top" secondItem="IhD-kd-gfE" secondAttribute="top" id="Qxt-jz-f7I"/>
+                                    <constraint firstAttribute="width" constant="360" id="a44-pM-Ram"/>
+                                    <constraint firstItem="R0b-ct-scc" firstAttribute="centerX" secondItem="IhD-kd-gfE" secondAttribute="centerX" id="aqX-m4-8Ov"/>
+                                    <constraint firstItem="R0b-ct-scc" firstAttribute="centerY" secondItem="IhD-kd-gfE" secondAttribute="centerY" id="crI-LC-P0g"/>
+                                    <constraint firstAttribute="height" constant="120" id="k8t-kv-nEU"/>
+                                    <constraint firstItem="Tq6-tl-Hzl" firstAttribute="centerX" secondItem="IhD-kd-gfE" secondAttribute="centerX" id="xzN-cp-1pj"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4f-Xf-uTp">
-                                <rect key="frame" x="11" y="65" width="56" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-back"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C8r-JC-5YB"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Sjf-bn-bCi" firstAttribute="centerX" secondItem="XMU-iI-oXW" secondAttribute="centerX" id="2bd-DG-9wi"/>
-                            <constraint firstItem="DJ1-RQ-tpz" firstAttribute="top" secondItem="C8r-JC-5YB" secondAttribute="top" constant="30" id="4Os-9U-1ia"/>
-                            <constraint firstItem="Sjf-bn-bCi" firstAttribute="top" secondItem="DJ1-RQ-tpz" secondAttribute="bottom" constant="50" id="CFE-vw-QbY"/>
-                            <constraint firstItem="C8r-JC-5YB" firstAttribute="bottom" secondItem="IhD-kd-gfE" secondAttribute="bottom" constant="526" id="Gdk-3m-09v"/>
-                            <constraint firstItem="DJ1-RQ-tpz" firstAttribute="centerX" secondItem="XMU-iI-oXW" secondAttribute="centerX" id="Qwb-0n-reT"/>
-                            <constraint firstItem="IhD-kd-gfE" firstAttribute="leading" secondItem="C8r-JC-5YB" secondAttribute="leading" constant="20" id="RvW-Nb-AZQ"/>
-                            <constraint firstItem="IhD-kd-gfE" firstAttribute="centerX" secondItem="XMU-iI-oXW" secondAttribute="centerX" id="Rvl-Nc-fRC"/>
-                            <constraint firstItem="IhD-kd-gfE" firstAttribute="top" secondItem="Sjf-bn-bCi" secondAttribute="bottom" constant="30" id="stQ-yY-ty6"/>
+                            <constraint firstItem="Sjf-bn-bCi" firstAttribute="centerX" secondItem="XMU-iI-oXW" secondAttribute="centerX" id="Arb-D2-yH3"/>
+                            <constraint firstItem="Sjf-bn-bCi" firstAttribute="top" secondItem="C8r-JC-5YB" secondAttribute="top" constant="50" id="Zje-r7-L9Y"/>
+                            <constraint firstItem="IhD-kd-gfE" firstAttribute="top" secondItem="Sjf-bn-bCi" secondAttribute="bottom" constant="30" id="pBb-g8-uCR"/>
+                            <constraint firstItem="IhD-kd-gfE" firstAttribute="centerX" secondItem="XMU-iI-oXW" secondAttribute="centerX" id="xB7-qU-5cZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="기기 연결하기" id="t1V-Qg-zus">
+                        <barButtonItem key="backBarButtonItem" title="이전단계" id="mVb-8g-niS"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmq-hg-AaP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-694.20289855072474" y="114.50892857142857"/>
+            <point key="canvasLocation" x="236" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="Xg9-j5-7gF">
             <objects>
                 <viewController id="JoR-SR-s3o" sceneMemberID="viewController">
@@ -98,18 +97,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdF-tx-Uuc">
-                                <rect key="frame" x="27" y="74" width="360" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="5AJ-fw-aVT"/>
-                                    <constraint firstAttribute="width" constant="360" id="uNS-V4-3mz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림등의 전원을 연결하고 파란 불이 깜박이는지 확인해 주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3e-XO-wTs">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="3BH-b3-AJ4"/>
                                     <constraint firstAttribute="width" constant="360" id="5RJ-lm-Quc"/>
@@ -120,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-sensor" translatesAutoresizingMaskIntoConstraints="NO" id="pBN-xc-Rk9">
-                                <rect key="frame" x="27" y="328" width="360" height="360"/>
+                                <rect key="frame" x="27" y="312" width="360" height="360"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="360" id="CnQ-I4-l9j"/>
                                     <constraint firstAttribute="height" constant="360" id="H8Y-2U-iIr"/>
@@ -129,35 +118,14 @@
                                 </constraints>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kBU-TF-3bv">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="fyZ-PL-4E4"/>
                                     <constraint firstAttribute="width" constant="360" id="joI-PN-0zX"/>
                                 </constraints>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICj-vO-0v3">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="T3M-Aa-4CB"/>
-                                    <constraint firstAttribute="width" constant="30" id="jSX-ec-685"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdX-Xm-7JR">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="dlo-yf-dHY"/>
-                                    <constraint firstAttribute="width" constant="120" id="gO6-kP-L0M"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNb-yf-SKp">
-                                <rect key="frame" x="27" y="710" width="360" height="66"/>
+                                <rect key="frame" x="27" y="746" width="360" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="AZB-d2-AZD"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="bjb-d8-QTB"/>
@@ -167,31 +135,32 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-activated">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="S6L-3F-iFN" kind="show" id="psH-vJ-rtB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0ef-S6-qvT"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kBU-TF-3bv" firstAttribute="top" secondItem="ICj-vO-0v3" secondAttribute="bottom" constant="50" id="1Ga-qD-i6F"/>
-                            <constraint firstItem="VdF-tx-Uuc" firstAttribute="centerX" secondItem="hep-7L-Mps" secondAttribute="centerX" id="9Ar-98-dN6"/>
+                            <constraint firstItem="kBU-TF-3bv" firstAttribute="top" secondItem="0ef-S6-qvT" secondAttribute="top" constant="50" id="1Ga-qD-i6F"/>
                             <constraint firstItem="pBN-xc-Rk9" firstAttribute="top" secondItem="c3e-XO-wTs" secondAttribute="bottom" constant="50" id="AUB-bJ-RzK"/>
-                            <constraint firstItem="cdX-Xm-7JR" firstAttribute="top" secondItem="fNb-yf-SKp" secondAttribute="bottom" constant="20" id="BYd-gN-tQd"/>
+                            <constraint firstItem="0ef-S6-qvT" firstAttribute="bottom" secondItem="fNb-yf-SKp" secondAttribute="bottom" constant="50" id="BYd-gN-tQd"/>
                             <constraint firstItem="fNb-yf-SKp" firstAttribute="centerX" secondItem="hep-7L-Mps" secondAttribute="centerX" id="F8K-wy-ZZs"/>
-                            <constraint firstItem="0ef-S6-qvT" firstAttribute="bottom" secondItem="cdX-Xm-7JR" secondAttribute="bottom" constant="30" id="Het-13-0es"/>
                             <constraint firstItem="pBN-xc-Rk9" firstAttribute="centerX" secondItem="hep-7L-Mps" secondAttribute="centerX" id="K90-OI-XfE"/>
-                            <constraint firstItem="VdF-tx-Uuc" firstAttribute="top" secondItem="0ef-S6-qvT" secondAttribute="top" constant="30" id="KMj-EL-Lkx"/>
-                            <constraint firstItem="ICj-vO-0v3" firstAttribute="top" secondItem="0ef-S6-qvT" secondAttribute="top" constant="30" id="Rb1-BE-JLP"/>
-                            <constraint firstItem="cdX-Xm-7JR" firstAttribute="centerX" secondItem="hep-7L-Mps" secondAttribute="centerX" id="UEt-GO-WuP"/>
-                            <constraint firstItem="ICj-vO-0v3" firstAttribute="trailing" secondItem="0ef-S6-qvT" secondAttribute="trailing" constant="-20" id="X1e-hH-sWp"/>
                             <constraint firstItem="c3e-XO-wTs" firstAttribute="centerX" secondItem="hep-7L-Mps" secondAttribute="centerX" id="hHS-hx-4lT"/>
                             <constraint firstItem="c3e-XO-wTs" firstAttribute="top" secondItem="kBU-TF-3bv" secondAttribute="bottom" constant="30" id="rXW-YX-Q3a"/>
                             <constraint firstItem="kBU-TF-3bv" firstAttribute="centerX" secondItem="hep-7L-Mps" secondAttribute="centerX" id="rbw-AT-MnL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="mzp-0G-4jn">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="GYt-77-B0W"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="VER-Xm-HPL"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNh-9v-q5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="236.23188405797103" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1199" y="123"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JN3-1o-pIQ">
@@ -210,18 +179,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6y-7N-3Ot">
-                                <rect key="frame" x="20" y="72" width="37" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bq-Y6-enS">
+                                <rect key="frame" x="364" y="74" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aCR-hb-wvc"/>
+                                    <constraint firstAttribute="width" constant="30" id="aVo-vL-3eW"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="백"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p9h-Vj-RdQ"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="7Bq-Y6-enS" firstAttribute="top" secondItem="p9h-Vj-RdQ" secondAttribute="top" constant="30" id="Ag9-tV-QnU"/>
                             <constraint firstItem="upe-wm-lmI" firstAttribute="centerX" secondItem="WtG-ak-dvq" secondAttribute="centerX" id="JHF-sF-tGP"/>
                             <constraint firstItem="upe-wm-lmI" firstAttribute="top" secondItem="p9h-Vj-RdQ" secondAttribute="top" constant="30" id="iUV-15-5QH"/>
+                            <constraint firstItem="p9h-Vj-RdQ" firstAttribute="trailing" secondItem="7Bq-Y6-enS" secondAttribute="trailing" constant="20" id="jc7-IQ-xGO"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -229,7 +203,7 @@
             </objects>
             <point key="canvasLocation" x="5088" y="837"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="b8I-0u-Rx0">
             <objects>
                 <viewController id="S6L-3F-iFN" sceneMemberID="viewController">
@@ -237,18 +211,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psx-rf-We8">
-                                <rect key="frame" x="27" y="74" width="360" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="360" id="kJb-Cf-89X"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="ptb-Ol-ebv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림등의 전원을 연결하고 파란 불이 깜박이는지 확인해 주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAx-dJ-qpT">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Bwi-dk-Ugu"/>
                                     <constraint firstAttribute="width" constant="360" id="E8H-CV-usZ"/>
@@ -259,7 +223,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-connect-sensor-hub-2" translatesAutoresizingMaskIntoConstraints="NO" id="L4G-Av-yDE">
-                                <rect key="frame" x="27" y="328" width="360" height="360"/>
+                                <rect key="frame" x="27" y="312" width="360" height="360"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="360" id="4Lp-q0-3Ii"/>
                                     <constraint firstAttribute="width" constant="360" id="NlP-bE-qZQ"/>
@@ -268,35 +232,14 @@
                                 </constraints>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Tfy-RL-jwe">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="ndc-kE-buZ"/>
                                     <constraint firstAttribute="width" constant="360" id="x2q-wF-Pgq"/>
                                 </constraints>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmv-d2-UXX">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="H8G-6X-ysf"/>
-                                    <constraint firstAttribute="height" constant="30" id="hOM-tp-NGG"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-Fw-2Sj">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Ugs-2T-4jL"/>
-                                    <constraint firstAttribute="width" constant="120" id="hzX-pz-hXO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIj-Ji-Pqu">
-                                <rect key="frame" x="27" y="710" width="360" height="66"/>
+                                <rect key="frame" x="27" y="746" width="360" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="DSU-Tm-sew"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="Mh8-vi-8L0"/>
@@ -306,33 +249,35 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-activated">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mf5-iw-gQb" kind="show" id="jnj-a8-Hsi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dnL-ax-fjy"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JAx-dJ-qpT" firstAttribute="centerX" secondItem="6P3-9U-O3i" secondAttribute="centerX" id="DU8-tL-62I"/>
-                            <constraint firstItem="dnL-ax-fjy" firstAttribute="bottom" secondItem="hcJ-Fw-2Sj" secondAttribute="bottom" constant="30" id="JaN-Ur-sAo"/>
-                            <constraint firstItem="pmv-d2-UXX" firstAttribute="top" secondItem="dnL-ax-fjy" secondAttribute="top" constant="30" id="JwR-6S-dSh"/>
                             <constraint firstItem="Tfy-RL-jwe" firstAttribute="centerX" secondItem="6P3-9U-O3i" secondAttribute="centerX" id="KBG-SQ-IDb"/>
-                            <constraint firstItem="psx-rf-We8" firstAttribute="centerX" secondItem="6P3-9U-O3i" secondAttribute="centerX" id="Ptd-3G-8CP"/>
-                            <constraint firstItem="pmv-d2-UXX" firstAttribute="trailing" secondItem="dnL-ax-fjy" secondAttribute="trailing" constant="-20" id="Q9c-qg-WjU"/>
-                            <constraint firstItem="hcJ-Fw-2Sj" firstAttribute="centerX" secondItem="6P3-9U-O3i" secondAttribute="centerX" id="Shb-yQ-rwC"/>
                             <constraint firstItem="JAx-dJ-qpT" firstAttribute="top" secondItem="Tfy-RL-jwe" secondAttribute="bottom" constant="30" id="Taf-cg-zs9"/>
                             <constraint firstItem="L4G-Av-yDE" firstAttribute="top" secondItem="JAx-dJ-qpT" secondAttribute="bottom" constant="50" id="WQx-dE-A87"/>
-                            <constraint firstItem="psx-rf-We8" firstAttribute="top" secondItem="dnL-ax-fjy" secondAttribute="top" constant="30" id="dTT-Mz-sVn"/>
-                            <constraint firstItem="Tfy-RL-jwe" firstAttribute="top" secondItem="pmv-d2-UXX" secondAttribute="bottom" constant="50" id="gRQ-rf-VXG"/>
-                            <constraint firstItem="hcJ-Fw-2Sj" firstAttribute="top" secondItem="NIj-Ji-Pqu" secondAttribute="bottom" constant="20" id="s8I-Cu-cl2"/>
+                            <constraint firstItem="Tfy-RL-jwe" firstAttribute="top" secondItem="dnL-ax-fjy" secondAttribute="top" constant="50" id="gRQ-rf-VXG"/>
+                            <constraint firstItem="dnL-ax-fjy" firstAttribute="bottom" secondItem="NIj-Ji-Pqu" secondAttribute="bottom" constant="50" id="s8I-Cu-cl2"/>
                             <constraint firstItem="L4G-Av-yDE" firstAttribute="centerX" secondItem="6P3-9U-O3i" secondAttribute="centerX" id="twP-ld-ANZ"/>
                             <constraint firstItem="NIj-Ji-Pqu" firstAttribute="centerX" secondItem="6P3-9U-O3i" secondAttribute="centerX" id="zlL-Yd-9Od"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="0iz-DC-IeD">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="xg7-vD-5Bj"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="tUz-dF-NuF"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idm-9w-mgy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="123"/>
+            <point key="canvasLocation" x="2108.695652173913" y="122.54464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="IGI-xx-KJ8">
             <objects>
                 <viewController id="mf5-iw-gQb" sceneMemberID="viewController">
@@ -340,18 +285,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rz-c4-9yx">
-                                <rect key="frame" x="27" y="74" width="360" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="0kc-C6-ITh"/>
-                                    <constraint firstAttribute="width" constant="360" id="goT-VA-W8c"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서를 알림등에 꽂아주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C38-5j-DK6">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="LGR-hX-y19"/>
                                     <constraint firstAttribute="height" constant="90" id="kly-7D-vrs"/>
@@ -362,7 +297,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-connect-sensor-hub-3-1" translatesAutoresizingMaskIntoConstraints="NO" id="r6M-Hr-oCI">
-                                <rect key="frame" x="27" y="328" width="360" height="360"/>
+                                <rect key="frame" x="27" y="312" width="360" height="360"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="360" id="2OI-p6-Yts"/>
                                     <constraint firstAttribute="width" constant="360" id="6Su-Ax-jRj"/>
@@ -371,14 +306,14 @@
                                 </constraints>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="NhN-Nv-4On">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="Fd5-Cb-gAZ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="apR-Fm-bZ0"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVH-H7-xIV">
-                                <rect key="frame" x="27" y="710" width="360" height="66"/>
+                                <rect key="frame" x="27" y="746" width="360" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="h5R-oj-gio"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="oZL-rS-ho5"/>
@@ -388,27 +323,9 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-activated">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGf-2f-Rrv">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="9cS-Zz-Fnz"/>
-                                    <constraint firstAttribute="width" constant="120" id="FwT-KB-sS1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgT-HR-zz3">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="6Zv-rz-aBG"/>
-                                    <constraint firstAttribute="width" constant="30" id="lf4-Ce-iIy"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
+                                <connections>
+                                    <segue destination="t7d-Cz-VTn" kind="show" id="1zo-dU-X3B"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GTk-oT-gNZ"/>
@@ -416,26 +333,25 @@
                         <constraints>
                             <constraint firstItem="r6M-Hr-oCI" firstAttribute="top" secondItem="C38-5j-DK6" secondAttribute="bottom" constant="50" id="1x6-y9-8Hk"/>
                             <constraint firstItem="NhN-Nv-4On" firstAttribute="centerX" secondItem="W8Q-A8-M7b" secondAttribute="centerX" id="CF9-XN-GA4"/>
-                            <constraint firstItem="sGf-2f-Rrv" firstAttribute="centerX" secondItem="W8Q-A8-M7b" secondAttribute="centerX" id="HYg-no-xoS"/>
-                            <constraint firstItem="sGf-2f-Rrv" firstAttribute="top" secondItem="qVH-H7-xIV" secondAttribute="bottom" constant="20" id="Q4v-Hj-QFG"/>
-                            <constraint firstItem="zgT-HR-zz3" firstAttribute="trailing" secondItem="GTk-oT-gNZ" secondAttribute="trailing" constant="-20" id="XHg-Gu-Kis"/>
-                            <constraint firstItem="zgT-HR-zz3" firstAttribute="top" secondItem="GTk-oT-gNZ" secondAttribute="top" constant="30" id="XPj-Nw-3mc"/>
-                            <constraint firstItem="8Rz-c4-9yx" firstAttribute="top" secondItem="GTk-oT-gNZ" secondAttribute="top" constant="30" id="Y4f-MR-YCp"/>
-                            <constraint firstItem="GTk-oT-gNZ" firstAttribute="bottom" secondItem="sGf-2f-Rrv" secondAttribute="bottom" constant="30" id="aAN-Cw-13b"/>
+                            <constraint firstItem="GTk-oT-gNZ" firstAttribute="bottom" secondItem="qVH-H7-xIV" secondAttribute="bottom" constant="50" id="Q4v-Hj-QFG"/>
                             <constraint firstItem="qVH-H7-xIV" firstAttribute="centerX" secondItem="W8Q-A8-M7b" secondAttribute="centerX" id="bSd-qd-hIo"/>
                             <constraint firstItem="C38-5j-DK6" firstAttribute="top" secondItem="NhN-Nv-4On" secondAttribute="bottom" constant="30" id="geU-5Z-fYg"/>
                             <constraint firstItem="C38-5j-DK6" firstAttribute="centerX" secondItem="W8Q-A8-M7b" secondAttribute="centerX" id="mYu-1N-qAz"/>
-                            <constraint firstItem="NhN-Nv-4On" firstAttribute="top" secondItem="zgT-HR-zz3" secondAttribute="bottom" constant="50" id="mpb-lW-dDC"/>
+                            <constraint firstItem="NhN-Nv-4On" firstAttribute="top" secondItem="GTk-oT-gNZ" secondAttribute="top" constant="50" id="mpb-lW-dDC"/>
                             <constraint firstItem="r6M-Hr-oCI" firstAttribute="centerX" secondItem="W8Q-A8-M7b" secondAttribute="centerX" id="mwv-no-9J4"/>
-                            <constraint firstItem="8Rz-c4-9yx" firstAttribute="centerX" secondItem="W8Q-A8-M7b" secondAttribute="centerX" id="nFN-wr-91a"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="2DW-8O-DGZ">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="402-Eo-u8X"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="dZA-1C-ckc"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FYd-Pg-IUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2132" y="123"/>
+            <point key="canvasLocation" x="3042.0289855072465" y="122.54464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="Ztr-d3-5id">
             <objects>
                 <viewController id="t7d-Cz-VTn" sceneMemberID="viewController">
@@ -443,18 +359,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmX-FQ-XdF">
-                                <rect key="frame" x="27" y="74" width="360" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="Mjs-jp-dwh"/>
-                                    <constraint firstAttribute="width" constant="360" id="wRj-Mt-RZ7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방 안에서 사용하는 네트워크를 선택해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yw-Ri-9R6">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="Ed9-S0-JY0"/>
                                     <constraint firstAttribute="height" constant="90" id="KEd-EJ-xBZ"/>
@@ -465,14 +371,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="lYG-sh-SOZ">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="0vE-8g-Ebb"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="Jhi-UJ-45Q"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFf-gY-NOh">
-                                <rect key="frame" x="27" y="710" width="360" height="66"/>
+                                <rect key="frame" x="27" y="746" width="360" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="1eg-Ly-YeM"/>
                                     <constraint firstAttribute="width" constant="360" id="6ZQ-ES-ZUl"/>
@@ -482,27 +388,9 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-activated">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wk-Pk-WfM">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Hzy-HO-gwx"/>
-                                    <constraint firstAttribute="width" constant="120" id="irW-ox-ebe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQZ-Fi-Ygc">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="bm7-hq-90d"/>
-                                    <constraint firstAttribute="height" constant="30" id="mMq-Fz-3ae"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
+                                <connections>
+                                    <segue destination="8Bc-Kt-Ar8" kind="show" id="nKv-Mj-BKQ"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5lD-Al-yUb">
                                 <rect key="frame" x="27" y="276" width="360" height="415"/>
@@ -523,26 +411,25 @@
                         <viewLayoutGuide key="safeArea" id="QUg-ME-4Tb"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="QUg-ME-4Tb" firstAttribute="bottom" secondItem="7wk-Pk-WfM" secondAttribute="bottom" constant="30" id="7Lc-AF-fa0"/>
-                            <constraint firstItem="tmX-FQ-XdF" firstAttribute="centerX" secondItem="z1S-HY-dMs" secondAttribute="centerX" id="8Ig-KS-xw8"/>
-                            <constraint firstItem="lYG-sh-SOZ" firstAttribute="top" secondItem="pQZ-Fi-Ygc" secondAttribute="bottom" constant="50" id="AHH-Z7-u4D"/>
+                            <constraint firstItem="lYG-sh-SOZ" firstAttribute="top" secondItem="QUg-ME-4Tb" secondAttribute="top" constant="50" id="AHH-Z7-u4D"/>
                             <constraint firstItem="4Yw-Ri-9R6" firstAttribute="top" secondItem="lYG-sh-SOZ" secondAttribute="bottom" constant="30" id="AeF-Nu-tWC"/>
                             <constraint firstItem="4Yw-Ri-9R6" firstAttribute="centerX" secondItem="z1S-HY-dMs" secondAttribute="centerX" id="GcG-03-rxp"/>
-                            <constraint firstItem="7wk-Pk-WfM" firstAttribute="top" secondItem="XFf-gY-NOh" secondAttribute="bottom" constant="20" id="Saf-vh-3Qo"/>
-                            <constraint firstItem="pQZ-Fi-Ygc" firstAttribute="top" secondItem="QUg-ME-4Tb" secondAttribute="top" constant="30" id="TAy-Dl-kXe"/>
-                            <constraint firstItem="pQZ-Fi-Ygc" firstAttribute="trailing" secondItem="QUg-ME-4Tb" secondAttribute="trailing" constant="-20" id="VpG-Mu-4VP"/>
-                            <constraint firstItem="tmX-FQ-XdF" firstAttribute="top" secondItem="QUg-ME-4Tb" secondAttribute="top" constant="30" id="gA4-PX-qsB"/>
+                            <constraint firstItem="QUg-ME-4Tb" firstAttribute="bottom" secondItem="XFf-gY-NOh" secondAttribute="bottom" constant="50" id="Saf-vh-3Qo"/>
                             <constraint firstItem="lYG-sh-SOZ" firstAttribute="centerX" secondItem="z1S-HY-dMs" secondAttribute="centerX" id="mHn-yx-mz2"/>
-                            <constraint firstItem="7wk-Pk-WfM" firstAttribute="centerX" secondItem="z1S-HY-dMs" secondAttribute="centerX" id="unh-DK-U23"/>
                             <constraint firstItem="XFf-gY-NOh" firstAttribute="centerX" secondItem="z1S-HY-dMs" secondAttribute="centerX" id="yZA-uu-Jry"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="wm8-xQ-CHh">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="1CR-Hb-Zj3"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="z3H-pN-lXP"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDY-46-mpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3118.840579710145" y="122.54464285714285"/>
+            <point key="canvasLocation" x="4028.985507246377" y="122.54464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="wM0-TE-V7Y">
             <objects>
                 <viewController id="8Bc-Kt-Ar8" sceneMemberID="viewController">
@@ -550,18 +437,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcC-al-5c7">
-                                <rect key="frame" x="27" y="74" width="360" height="26.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="360" id="1DZ-0L-svU"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="IUj-ba-oBn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'Wifi이름'의 암호를 입력해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIH-DA-MjZ">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="DG9-Vt-RCN"/>
                                     <constraint firstAttribute="height" constant="90" id="jfP-j5-nAV"/>
@@ -572,14 +449,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="bQ8-ed-wRv">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="HRS-Te-Qxd"/>
                                     <constraint firstAttribute="width" constant="360" id="dFH-T1-no6"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydO-Nx-dYQ">
-                                <rect key="frame" x="27" y="724" width="360" height="52"/>
+                                <rect key="frame" x="27" y="760" width="360" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="MBa-Q1-nud"/>
                                     <constraint firstAttribute="width" constant="360" id="efA-ma-gle"/>
@@ -589,30 +466,12 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-normal">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5o-Fa-5KQ">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="348-R6-ia3"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="AA8-Z8-m1T"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoO-hj-pIq">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ng6-6l-zqt"/>
-                                    <constraint firstAttribute="width" constant="30" id="ikZ-Mx-WmJ"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
+                                <connections>
+                                    <segue destination="hrD-Cg-syt" kind="show" id="AH5-MY-gy1"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Prp-aT-TJd">
-                                <rect key="frame" x="27" y="308" width="360" height="60"/>
+                                <rect key="frame" x="27" y="292" width="360" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2lX-KM-GS5">
                                         <rect key="frame" x="0.0" y="0.0" width="307" height="60"/>
@@ -635,28 +494,26 @@
                         <viewLayoutGuide key="safeArea" id="4Mq-JH-wg5"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="XoO-hj-pIq" firstAttribute="trailing" secondItem="4Mq-JH-wg5" secondAttribute="trailing" constant="-20" id="8Cp-cx-hzV"/>
-                            <constraint firstItem="J5o-Fa-5KQ" firstAttribute="centerX" secondItem="Y4w-Hv-fE4" secondAttribute="centerX" id="DUw-LQ-L8o"/>
-                            <constraint firstItem="XoO-hj-pIq" firstAttribute="top" secondItem="4Mq-JH-wg5" secondAttribute="top" constant="30" id="EO2-L2-b0Q"/>
                             <constraint firstItem="Prp-aT-TJd" firstAttribute="top" secondItem="bIH-DA-MjZ" secondAttribute="bottom" constant="30" id="G8i-yL-7qN"/>
-                            <constraint firstItem="vcC-al-5c7" firstAttribute="top" secondItem="4Mq-JH-wg5" secondAttribute="top" constant="30" id="Qo9-a7-33q"/>
-                            <constraint firstItem="4Mq-JH-wg5" firstAttribute="bottom" secondItem="J5o-Fa-5KQ" secondAttribute="bottom" constant="30" id="SuK-mA-c6N"/>
                             <constraint firstItem="bIH-DA-MjZ" firstAttribute="centerX" secondItem="Y4w-Hv-fE4" secondAttribute="centerX" id="TKN-Zu-wSP"/>
-                            <constraint firstItem="vcC-al-5c7" firstAttribute="centerX" secondItem="Y4w-Hv-fE4" secondAttribute="centerX" id="YU2-Jz-Gop"/>
                             <constraint firstItem="bIH-DA-MjZ" firstAttribute="top" secondItem="bQ8-ed-wRv" secondAttribute="bottom" constant="30" id="cAZ-VH-173"/>
                             <constraint firstItem="Prp-aT-TJd" firstAttribute="centerX" secondItem="Y4w-Hv-fE4" secondAttribute="centerX" id="gco-V4-3Fl"/>
                             <constraint firstItem="ydO-Nx-dYQ" firstAttribute="centerX" secondItem="Y4w-Hv-fE4" secondAttribute="centerX" id="hSU-5K-2Ce"/>
-                            <constraint firstItem="bQ8-ed-wRv" firstAttribute="top" secondItem="XoO-hj-pIq" secondAttribute="bottom" constant="50" id="i0T-pv-O34"/>
-                            <constraint firstItem="J5o-Fa-5KQ" firstAttribute="top" secondItem="ydO-Nx-dYQ" secondAttribute="bottom" constant="20" id="xU5-BY-45B"/>
+                            <constraint firstItem="bQ8-ed-wRv" firstAttribute="top" secondItem="4Mq-JH-wg5" secondAttribute="top" constant="50" id="i0T-pv-O34"/>
+                            <constraint firstItem="4Mq-JH-wg5" firstAttribute="bottom" secondItem="ydO-Nx-dYQ" secondAttribute="bottom" constant="50" id="xU5-BY-45B"/>
                             <constraint firstItem="bQ8-ed-wRv" firstAttribute="centerX" secondItem="Y4w-Hv-fE4" secondAttribute="centerX" id="zMg-d8-Y3P"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="i5G-kM-CBh">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="pr7-Bj-ibP"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="Va4-zl-0cY"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2n-Va-sKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4103" y="123"/>
+            <point key="canvasLocation" x="5013.04347826087" y="122.54464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="fRI-vn-0Zt">
             <objects>
                 <viewController id="hrD-Cg-syt" sceneMemberID="viewController">
@@ -664,18 +521,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUI-eN-Fwr">
-                                <rect key="frame" x="27" y="74" width="360" height="26.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="5Oj-SQ-6Cb"/>
-                                    <constraint firstAttribute="width" constant="360" id="mML-vv-O9q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서는 누가 사용하나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etl-YD-Pel">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="s3u-D1-5nN"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="tQk-CW-jch"/>
@@ -686,14 +533,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tzb-Kp-6LD">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="JAu-D5-3sa"/>
                                     <constraint firstAttribute="width" constant="360" id="KEA-ji-Nuy"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yH-5P-PZl">
-                                <rect key="frame" x="27" y="724" width="360" height="52"/>
+                                <rect key="frame" x="27" y="760" width="360" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="TIV-nn-SFu"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="vUV-Nu-ENa"/>
@@ -703,30 +550,12 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-normal">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7N-rY-UVR">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="5BB-Al-f81"/>
-                                    <constraint firstAttribute="width" constant="120" id="Voh-B8-hF2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLz-ld-rfD">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="1E0-tt-Dtq"/>
-                                    <constraint firstAttribute="height" constant="30" id="5HE-aW-tlT"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
+                                <connections>
+                                    <segue destination="SoO-cK-9P4" kind="show" id="l2T-xm-p6K"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자의 이름 혹은 별명" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0t-EG-Nwt">
-                                <rect key="frame" x="27" y="328" width="360" height="60"/>
+                                <rect key="frame" x="27" y="312" width="360" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="4g0-wD-ies"/>
                                     <constraint firstAttribute="height" constant="60" id="kGb-S1-QHK"/>
@@ -738,28 +567,27 @@
                         <viewLayoutGuide key="safeArea" id="Mbk-ug-jd8"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="UUI-eN-Fwr" firstAttribute="centerX" secondItem="N0W-Vp-fbu" secondAttribute="centerX" id="20E-P0-Xzk"/>
-                            <constraint firstItem="iLz-ld-rfD" firstAttribute="trailing" secondItem="Mbk-ug-jd8" secondAttribute="trailing" constant="-20" id="2ke-pl-ghS"/>
-                            <constraint firstItem="Tzb-Kp-6LD" firstAttribute="top" secondItem="iLz-ld-rfD" secondAttribute="bottom" constant="50" id="58p-um-9ZH"/>
+                            <constraint firstItem="Tzb-Kp-6LD" firstAttribute="top" secondItem="Mbk-ug-jd8" secondAttribute="top" constant="50" id="58p-um-9ZH"/>
                             <constraint firstItem="Tzb-Kp-6LD" firstAttribute="centerX" secondItem="N0W-Vp-fbu" secondAttribute="centerX" id="FiY-Kt-Qht"/>
-                            <constraint firstItem="S7N-rY-UVR" firstAttribute="top" secondItem="7yH-5P-PZl" secondAttribute="bottom" constant="20" id="GRP-Vh-pOn"/>
-                            <constraint firstItem="iLz-ld-rfD" firstAttribute="top" secondItem="Mbk-ug-jd8" secondAttribute="top" constant="30" id="KTh-Q8-TIv"/>
+                            <constraint firstItem="Mbk-ug-jd8" firstAttribute="bottom" secondItem="7yH-5P-PZl" secondAttribute="bottom" constant="50" id="GRP-Vh-pOn"/>
                             <constraint firstItem="7yH-5P-PZl" firstAttribute="centerX" secondItem="N0W-Vp-fbu" secondAttribute="centerX" id="N3A-Gc-vsy"/>
                             <constraint firstItem="etl-YD-Pel" firstAttribute="centerX" secondItem="N0W-Vp-fbu" secondAttribute="centerX" id="UXo-Qx-eE3"/>
                             <constraint firstItem="a0t-EG-Nwt" firstAttribute="centerX" secondItem="N0W-Vp-fbu" secondAttribute="centerX" id="WBm-wc-XJE"/>
-                            <constraint firstItem="UUI-eN-Fwr" firstAttribute="top" secondItem="Mbk-ug-jd8" secondAttribute="top" constant="30" id="edP-D6-gPh"/>
                             <constraint firstItem="etl-YD-Pel" firstAttribute="top" secondItem="Tzb-Kp-6LD" secondAttribute="bottom" constant="30" id="k2Q-Ae-5cO"/>
-                            <constraint firstItem="Mbk-ug-jd8" firstAttribute="bottom" secondItem="S7N-rY-UVR" secondAttribute="bottom" constant="30" id="olW-w0-1H1"/>
-                            <constraint firstItem="S7N-rY-UVR" firstAttribute="centerX" secondItem="N0W-Vp-fbu" secondAttribute="centerX" id="vzH-5C-3FE"/>
                             <constraint firstItem="a0t-EG-Nwt" firstAttribute="top" secondItem="etl-YD-Pel" secondAttribute="bottom" constant="50" id="x23-UM-0No"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="3iA-du-g9d">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="PiZ-0R-DUH"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="1dJ-YA-z0r"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03Q-vj-7aS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5087" y="123"/>
+            <point key="canvasLocation" x="5997.1014492753629" y="122.54464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="oQf-rT-Vg0">
             <objects>
                 <viewController id="SoO-cK-9P4" sceneMemberID="viewController">
@@ -767,18 +595,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DX-mF-4uR">
-                                <rect key="frame" x="27" y="74" width="360" height="26.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="aTX-kR-81d"/>
-                                    <constraint firstAttribute="width" constant="360" id="lTH-s9-qlo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별은 무엇인가요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDi-Db-Nb9">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="6F3-oe-TsG"/>
                                     <constraint firstAttribute="width" constant="360" id="jIj-h9-p6q"/>
@@ -789,14 +607,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="6rq-1d-nmS">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="cIr-A9-vg7"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="oCd-Go-pO7"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDV-2S-TyL">
-                                <rect key="frame" x="27" y="724" width="360" height="52"/>
+                                <rect key="frame" x="27" y="760" width="360" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="0Vc-rs-0Yb"/>
                                     <constraint firstAttribute="width" constant="360" id="Vdj-Bu-n5g"/>
@@ -806,30 +624,12 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-normal">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TG3-og-zS8">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="acB-wY-9qs"/>
-                                    <constraint firstAttribute="width" constant="120" id="cgz-B0-z7G"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxT-sO-3fB">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="8ga-dQ-RgU"/>
-                                    <constraint firstAttribute="height" constant="30" id="fWk-l8-ZPI"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
+                                <connections>
+                                    <segue destination="bNt-Ix-JIM" kind="show" id="K2D-mg-m7S"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hM2-Dl-Zau">
-                                <rect key="frame" x="27" y="308" width="360" height="60"/>
+                                <rect key="frame" x="27" y="292" width="360" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="선택해주세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dec-7y-HIF">
                                         <rect key="frame" x="0.0" y="0.0" width="299" height="60"/>
@@ -849,7 +649,7 @@
                                 </constraints>
                             </stackView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zH-gZ-Dx9">
-                                <rect key="frame" x="27" y="418" width="360" height="60"/>
+                                <rect key="frame" x="27" y="402" width="360" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="JX9-Y2-PSX"/>
@@ -866,7 +666,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMY-wo-YaX">
-                                <rect key="frame" x="27" y="488" width="360" height="60"/>
+                                <rect key="frame" x="27" y="472" width="360" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Dwb-Mg-o4M"/>
@@ -888,33 +688,32 @@
                         <viewLayoutGuide key="safeArea" id="w6X-au-yGP"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="zxT-sO-3fB" firstAttribute="top" secondItem="w6X-au-yGP" secondAttribute="top" constant="30" id="2Zx-oO-I9q"/>
+                            <constraint firstItem="w6X-au-yGP" firstAttribute="bottom" secondItem="lDV-2S-TyL" secondAttribute="bottom" constant="50" id="4Am-gL-JnL"/>
                             <constraint firstItem="HDi-Db-Nb9" firstAttribute="top" secondItem="6rq-1d-nmS" secondAttribute="bottom" constant="30" id="AYT-fJ-jed"/>
-                            <constraint firstItem="6rq-1d-nmS" firstAttribute="top" secondItem="zxT-sO-3fB" secondAttribute="bottom" constant="50" id="GaY-g0-IfV"/>
                             <constraint firstItem="4zH-gZ-Dx9" firstAttribute="top" secondItem="hM2-Dl-Zau" secondAttribute="bottom" constant="50" id="JoW-TN-mst"/>
-                            <constraint firstItem="w6X-au-yGP" firstAttribute="bottom" secondItem="TG3-og-zS8" secondAttribute="bottom" constant="30" id="PbY-VF-oYw"/>
                             <constraint firstItem="hM2-Dl-Zau" firstAttribute="top" secondItem="HDi-Db-Nb9" secondAttribute="bottom" constant="30" id="QHq-bh-8VG"/>
                             <constraint firstItem="4zH-gZ-Dx9" firstAttribute="top" secondItem="hM2-Dl-Zau" secondAttribute="bottom" constant="50" id="RBm-5R-hzc"/>
                             <constraint firstItem="6rq-1d-nmS" firstAttribute="centerX" secondItem="0zR-Gx-rlx" secondAttribute="centerX" id="RfS-V0-dhA"/>
                             <constraint firstItem="lDV-2S-TyL" firstAttribute="centerX" secondItem="0zR-Gx-rlx" secondAttribute="centerX" id="TY1-IR-Qzp"/>
-                            <constraint firstItem="9DX-mF-4uR" firstAttribute="top" secondItem="w6X-au-yGP" secondAttribute="top" constant="30" id="UIM-7I-s5V"/>
-                            <constraint firstItem="zxT-sO-3fB" firstAttribute="trailing" secondItem="w6X-au-yGP" secondAttribute="trailing" constant="-20" id="aPS-Fr-hbW"/>
                             <constraint firstItem="yMY-wo-YaX" firstAttribute="top" secondItem="4zH-gZ-Dx9" secondAttribute="bottom" constant="10" id="bA8-K6-7pC"/>
                             <constraint firstItem="HDi-Db-Nb9" firstAttribute="centerX" secondItem="0zR-Gx-rlx" secondAttribute="centerX" id="gJN-c4-UKm"/>
-                            <constraint firstItem="TG3-og-zS8" firstAttribute="top" secondItem="lDV-2S-TyL" secondAttribute="bottom" constant="20" id="oof-IR-20q"/>
                             <constraint firstItem="hM2-Dl-Zau" firstAttribute="centerX" secondItem="0zR-Gx-rlx" secondAttribute="centerX" id="piA-NU-cwT"/>
                             <constraint firstItem="yMY-wo-YaX" firstAttribute="centerX" secondItem="0zR-Gx-rlx" secondAttribute="centerX" id="pqa-h3-hMN"/>
                             <constraint firstItem="4zH-gZ-Dx9" firstAttribute="centerX" secondItem="0zR-Gx-rlx" secondAttribute="centerX" id="rV1-Ox-Acf"/>
-                            <constraint firstItem="TG3-og-zS8" firstAttribute="centerX" secondItem="0zR-Gx-rlx" secondAttribute="centerX" id="tsy-L0-IXV"/>
-                            <constraint firstItem="9DX-mF-4uR" firstAttribute="centerX" secondItem="0zR-Gx-rlx" secondAttribute="centerX" id="ybC-17-GkU"/>
+                            <constraint firstItem="6rq-1d-nmS" firstAttribute="top" secondItem="w6X-au-yGP" secondAttribute="top" constant="50" id="wnj-P7-hQX"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="Jue-GH-Zzq">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="4a1-hy-Ya7"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="pts-VY-0JA"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6q-Wg-mKy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="236.23188405797103" y="836.38392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="qy1-cp-X3n">
             <objects>
                 <viewController id="bNt-Ix-JIM" sceneMemberID="viewController">
@@ -922,18 +721,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RB-6c-PBv">
-                                <rect key="frame" x="27" y="74" width="360" height="26.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="6Pd-pd-eLQ"/>
-                                    <constraint firstAttribute="width" constant="360" id="fRH-Qc-xis"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나이를 입력해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mz-go-e7A">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Uf0-Wp-SB3"/>
                                     <constraint firstAttribute="width" constant="360" id="tJE-qk-iza"/>
@@ -944,14 +733,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="NjW-gS-OXo">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="FIt-zw-22o"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="OZT-dA-3a4"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWz-bj-bCw">
-                                <rect key="frame" x="27" y="724" width="360" height="52"/>
+                                <rect key="frame" x="27" y="760" width="360" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="Uiy-Sp-dpS"/>
                                     <constraint firstAttribute="width" constant="360" id="W17-hV-UjO"/>
@@ -961,30 +750,12 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-normal">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGQ-8k-SiT">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="6fd-GY-exp"/>
-                                    <constraint firstAttribute="width" constant="120" id="Hto-l0-tlb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSx-06-SDn">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Fzw-At-kiF"/>
-                                    <constraint firstAttribute="height" constant="30" id="vLY-h7-WdX"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
+                                <connections>
+                                    <segue destination="NGR-mH-LVm" kind="show" id="d3Z-ee-vLY"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lGj-as-bgr">
-                                <rect key="frame" x="27" y="308" width="360" height="60"/>
+                                <rect key="frame" x="27" y="292" width="360" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="나이를 입력해주세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAj-lD-4sB">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="60"/>
@@ -1001,28 +772,27 @@
                         <viewLayoutGuide key="safeArea" id="vdV-4A-WyA"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="9RB-6c-PBv" firstAttribute="top" secondItem="vdV-4A-WyA" secondAttribute="top" constant="30" id="0GC-e7-Zjl"/>
                             <constraint firstItem="3Mz-go-e7A" firstAttribute="centerX" secondItem="xmf-zi-MRM" secondAttribute="centerX" id="12I-tG-Cf4"/>
                             <constraint firstItem="lGj-as-bgr" firstAttribute="top" secondItem="3Mz-go-e7A" secondAttribute="bottom" constant="30" id="1vp-9D-YmQ"/>
                             <constraint firstItem="NjW-gS-OXo" firstAttribute="centerX" secondItem="xmf-zi-MRM" secondAttribute="centerX" id="7dp-Xc-Oei"/>
                             <constraint firstItem="lGj-as-bgr" firstAttribute="centerX" secondItem="xmf-zi-MRM" secondAttribute="centerX" id="9EF-Fl-2CV"/>
-                            <constraint firstItem="cSx-06-SDn" firstAttribute="top" secondItem="vdV-4A-WyA" secondAttribute="top" constant="30" id="Fcb-30-Klw"/>
-                            <constraint firstItem="cSx-06-SDn" firstAttribute="trailing" secondItem="vdV-4A-WyA" secondAttribute="trailing" constant="-20" id="Lr7-dF-jtm"/>
+                            <constraint firstItem="vdV-4A-WyA" firstAttribute="bottom" secondItem="FWz-bj-bCw" secondAttribute="bottom" constant="50" id="LZ8-An-bPW"/>
                             <constraint firstItem="FWz-bj-bCw" firstAttribute="centerX" secondItem="xmf-zi-MRM" secondAttribute="centerX" id="Pks-WI-qiY"/>
-                            <constraint firstItem="GGQ-8k-SiT" firstAttribute="top" secondItem="FWz-bj-bCw" secondAttribute="bottom" constant="20" id="ZOH-4l-Zza"/>
-                            <constraint firstItem="NjW-gS-OXo" firstAttribute="top" secondItem="cSx-06-SDn" secondAttribute="bottom" constant="50" id="jSX-eP-2tv"/>
-                            <constraint firstItem="vdV-4A-WyA" firstAttribute="bottom" secondItem="GGQ-8k-SiT" secondAttribute="bottom" constant="30" id="lxF-hH-RXR"/>
-                            <constraint firstItem="GGQ-8k-SiT" firstAttribute="centerX" secondItem="xmf-zi-MRM" secondAttribute="centerX" id="pMh-if-FvL"/>
-                            <constraint firstItem="9RB-6c-PBv" firstAttribute="centerX" secondItem="xmf-zi-MRM" secondAttribute="centerX" id="qoZ-Ru-OVN"/>
+                            <constraint firstItem="NjW-gS-OXo" firstAttribute="top" secondItem="vdV-4A-WyA" secondAttribute="top" constant="50" id="x3S-jV-ZL9"/>
                             <constraint firstItem="3Mz-go-e7A" firstAttribute="top" secondItem="NjW-gS-OXo" secondAttribute="bottom" constant="30" id="zyw-7E-q6g"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="6HK-El-a7V">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="HgA-6B-Shq"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="yBp-H0-mCB"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NPm-Tu-rSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1199" y="836"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="rXJ-US-MjP">
             <objects>
                 <viewController id="NGR-mH-LVm" sceneMemberID="viewController">
@@ -1030,18 +800,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpl-Nb-63q">
-                                <rect key="frame" x="27" y="74" width="360" height="26.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="360" id="Gu7-eF-yOx"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="eAN-Rk-Vby"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림등은 어디에 놓나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmc-8H-Vnv">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Ieu-QX-YlB"/>
                                     <constraint firstAttribute="width" constant="360" id="Yrb-T1-dx9"/>
@@ -1052,14 +812,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="XRQ-ry-3hk">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="5iV-9H-Inb"/>
                                     <constraint firstAttribute="width" constant="360" id="yKo-hD-xCs"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nc1-vv-ddU">
-                                <rect key="frame" x="27" y="724" width="360" height="52"/>
+                                <rect key="frame" x="27" y="760" width="360" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="IyH-Pn-ZCT"/>
                                     <constraint firstAttribute="width" constant="360" id="umi-N5-E2b"/>
@@ -1069,30 +829,12 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-normal">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDm-vk-pBi">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="M4r-vM-MSK"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="uqb-C6-EOG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INI-3Z-5m2">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="4UN-O6-wOL"/>
-                                    <constraint firstAttribute="height" constant="30" id="cJw-iX-tRz"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
+                                <connections>
+                                    <segue destination="f6h-Ce-HLT" kind="show" id="bUN-up-IR7"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-h9-fxB">
-                                <rect key="frame" x="27" y="308" width="360" height="60"/>
+                                <rect key="frame" x="27" y="292" width="360" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="알림등을 놓는 공간의 이름" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awI-5f-ned">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="60"/>
@@ -1109,28 +851,27 @@
                         <viewLayoutGuide key="safeArea" id="hyt-xk-1oG"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="hyt-xk-1oG" firstAttribute="bottom" secondItem="WDm-vk-pBi" secondAttribute="bottom" constant="30" id="1OO-DZ-2y8"/>
+                            <constraint firstItem="XRQ-ry-3hk" firstAttribute="top" secondItem="hyt-xk-1oG" secondAttribute="top" constant="50" id="1sc-Wo-SFv"/>
                             <constraint firstItem="nmc-8H-Vnv" firstAttribute="centerX" secondItem="prv-B3-8sV" secondAttribute="centerX" id="DJw-gC-Hg8"/>
                             <constraint firstItem="f5b-h9-fxB" firstAttribute="top" secondItem="nmc-8H-Vnv" secondAttribute="bottom" constant="30" id="LqI-F1-lbK"/>
-                            <constraint firstItem="Mpl-Nb-63q" firstAttribute="top" secondItem="hyt-xk-1oG" secondAttribute="top" constant="30" id="Rdr-TD-okk"/>
                             <constraint firstItem="nmc-8H-Vnv" firstAttribute="top" secondItem="XRQ-ry-3hk" secondAttribute="bottom" constant="30" id="XFI-LP-x5Q"/>
                             <constraint firstItem="XRQ-ry-3hk" firstAttribute="centerX" secondItem="prv-B3-8sV" secondAttribute="centerX" id="YbW-eP-URG"/>
-                            <constraint firstItem="WDm-vk-pBi" firstAttribute="centerX" secondItem="prv-B3-8sV" secondAttribute="centerX" id="dyZ-RP-stD"/>
-                            <constraint firstItem="XRQ-ry-3hk" firstAttribute="top" secondItem="INI-3Z-5m2" secondAttribute="bottom" constant="50" id="eBY-X1-tR8"/>
-                            <constraint firstItem="WDm-vk-pBi" firstAttribute="top" secondItem="nc1-vv-ddU" secondAttribute="bottom" constant="20" id="fwS-co-QdO"/>
+                            <constraint firstItem="hyt-xk-1oG" firstAttribute="bottom" secondItem="nc1-vv-ddU" secondAttribute="bottom" constant="50" id="ly1-tx-khF"/>
                             <constraint firstItem="nc1-vv-ddU" firstAttribute="centerX" secondItem="prv-B3-8sV" secondAttribute="centerX" id="nt6-GF-DtZ"/>
                             <constraint firstItem="f5b-h9-fxB" firstAttribute="centerX" secondItem="prv-B3-8sV" secondAttribute="centerX" id="qCn-U0-dPy"/>
-                            <constraint firstItem="INI-3Z-5m2" firstAttribute="trailing" secondItem="hyt-xk-1oG" secondAttribute="trailing" constant="-20" id="sTi-9z-wC3"/>
-                            <constraint firstItem="Mpl-Nb-63q" firstAttribute="centerX" secondItem="prv-B3-8sV" secondAttribute="centerX" id="wBA-kM-enZ"/>
-                            <constraint firstItem="INI-3Z-5m2" firstAttribute="top" secondItem="hyt-xk-1oG" secondAttribute="top" constant="30" id="ykf-mF-zfo"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="KLP-My-E49">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="LU6-NV-fOa"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="nfB-9u-RPY"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSd-rF-C2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2132" y="836"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="nfV-Ms-LaQ">
             <objects>
                 <viewController id="f6h-Ce-HLT" sceneMemberID="viewController">
@@ -1138,18 +879,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvN-vD-4oT">
-                                <rect key="frame" x="27" y="74" width="360" height="26.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="360" id="8sD-Hs-yuy"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="zYm-fg-xJW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="적정 온도를 설정해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATs-kr-q6b">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="TJ3-mQ-HcL"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="cuI-5b-n2p"/>
@@ -1160,14 +891,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="kqW-5S-6a0">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="4XX-6t-cSR"/>
                                     <constraint firstAttribute="width" constant="360" id="PGg-lI-dII"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ne5-oF-ehV">
-                                <rect key="frame" x="27" y="724" width="360" height="52"/>
+                                <rect key="frame" x="27" y="760" width="360" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="ICx-QT-xE4"/>
                                     <constraint firstAttribute="width" constant="360" id="Szf-ew-Jt6"/>
@@ -1177,30 +908,12 @@
                                 <state key="normal" title="다음으로" backgroundImage="bg-button-normal">
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqA-a1-mWN">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Ojw-Ih-jAB"/>
-                                    <constraint firstAttribute="width" constant="120" id="ibp-Rc-HH0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5w9-Iv-qtK">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="B9u-x1-5cX"/>
-                                    <constraint firstAttribute="width" constant="30" id="wnB-iw-f22"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
+                                <connections>
+                                    <segue destination="u2I-a7-7si" kind="show" id="OQZ-96-y0G"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wro-4W-gZ9">
-                                <rect key="frame" x="27" y="288" width="360" height="180"/>
+                                <rect key="frame" x="27" y="272" width="360" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="실내 온도를 아래의 온도범위로 유지할 수 있도록 모니터링합니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xep-qO-hhr">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="60"/>
@@ -1297,7 +1010,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cC4-VD-4q6">
-                                <rect key="frame" x="27" y="483" width="360" height="110"/>
+                                <rect key="frame" x="27" y="467" width="360" height="110"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVt-Et-moz">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="70"/>
@@ -1388,30 +1101,28 @@
                         <viewLayoutGuide key="safeArea" id="8oG-QN-K1Y"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="kqW-5S-6a0" firstAttribute="top" secondItem="8oG-QN-K1Y" secondAttribute="top" constant="50" id="5qS-H0-adi"/>
+                            <constraint firstItem="8oG-QN-K1Y" firstAttribute="bottom" secondItem="ne5-oF-ehV" secondAttribute="bottom" constant="50" id="7E2-VL-v6I"/>
                             <constraint firstItem="Wro-4W-gZ9" firstAttribute="leading" secondItem="ATs-kr-q6b" secondAttribute="leading" id="DXZ-cw-mPc"/>
-                            <constraint firstItem="kqW-5S-6a0" firstAttribute="top" secondItem="5w9-Iv-qtK" secondAttribute="bottom" constant="50" id="EqM-6e-bCT"/>
                             <constraint firstItem="kqW-5S-6a0" firstAttribute="centerX" secondItem="j7M-sR-B9X" secondAttribute="centerX" id="GBa-A7-ZBL"/>
                             <constraint firstItem="ATs-kr-q6b" firstAttribute="top" secondItem="kqW-5S-6a0" secondAttribute="bottom" constant="30" id="GWa-Cu-Uca"/>
-                            <constraint firstItem="VqA-a1-mWN" firstAttribute="centerX" secondItem="j7M-sR-B9X" secondAttribute="centerX" id="I0K-nF-wu4"/>
-                            <constraint firstItem="5w9-Iv-qtK" firstAttribute="top" secondItem="8oG-QN-K1Y" secondAttribute="top" constant="30" id="I8g-sw-9E9"/>
                             <constraint firstItem="ATs-kr-q6b" firstAttribute="centerX" secondItem="j7M-sR-B9X" secondAttribute="centerX" id="L8s-Ex-83v"/>
-                            <constraint firstItem="8oG-QN-K1Y" firstAttribute="bottom" secondItem="VqA-a1-mWN" secondAttribute="bottom" constant="30" id="LWb-1t-B3c"/>
-                            <constraint firstItem="wvN-vD-4oT" firstAttribute="top" secondItem="8oG-QN-K1Y" secondAttribute="top" constant="30" id="Pjv-Pd-KBY"/>
-                            <constraint firstItem="VqA-a1-mWN" firstAttribute="top" secondItem="ne5-oF-ehV" secondAttribute="bottom" constant="20" id="XUa-Na-A6e"/>
-                            <constraint firstItem="wvN-vD-4oT" firstAttribute="centerX" secondItem="j7M-sR-B9X" secondAttribute="centerX" id="YhE-oh-RH1"/>
                             <constraint firstItem="Wro-4W-gZ9" firstAttribute="top" secondItem="ATs-kr-q6b" secondAttribute="bottom" constant="10" id="koH-Je-6pe"/>
                             <constraint firstItem="ne5-oF-ehV" firstAttribute="centerX" secondItem="j7M-sR-B9X" secondAttribute="centerX" id="njp-FY-aHg"/>
                             <constraint firstItem="cC4-VD-4q6" firstAttribute="top" secondItem="Wro-4W-gZ9" secondAttribute="bottom" constant="15" id="oKj-mA-gUu"/>
                             <constraint firstItem="cC4-VD-4q6" firstAttribute="leading" secondItem="ne5-oF-ehV" secondAttribute="leading" id="oR8-fb-8fq"/>
-                            <constraint firstItem="5w9-Iv-qtK" firstAttribute="trailing" secondItem="8oG-QN-K1Y" secondAttribute="trailing" constant="-20" id="p4r-gM-S50"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="Bpo-kE-kY7">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="GdS-an-rfJ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="nv5-Ua-t65"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpI-Dm-nd7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3118.840579710145" y="835.71428571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="XeC-1D-Jho">
             <objects>
                 <viewController id="u2I-a7-7si" sceneMemberID="viewController">
@@ -1419,18 +1130,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원형센서 + 알림등 연결하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Via-ow-Gil">
-                                <rect key="frame" x="27" y="74" width="360" height="26.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="360" id="mIH-w6-W0s"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="sMX-VT-cfg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="적정 습도를 설정해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaI-z0-fkx">
-                                <rect key="frame" x="27" y="188" width="360" height="90"/>
+                                <rect key="frame" x="27" y="172" width="360" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="Lgs-xJ-dFV"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="bsu-He-ccg"/>
@@ -1441,14 +1142,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="NqW-XA-ynu">
-                                <rect key="frame" x="27" y="154" width="360" height="4"/>
+                                <rect key="frame" x="27" y="138" width="360" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="1wD-1o-gbT"/>
                                     <constraint firstAttribute="width" constant="360" id="TK3-Ad-47P"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLz-od-Hwx">
-                                <rect key="frame" x="27" y="724" width="360" height="52"/>
+                                <rect key="frame" x="27" y="760" width="360" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="BC6-fc-w0u"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="w4H-GL-uXY"/>
@@ -1459,29 +1160,8 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oay-7p-Pc5">
-                                <rect key="frame" x="147" y="796" width="120" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Y7h-1F-u6q"/>
-                                    <constraint firstAttribute="width" constant="120" id="pfY-aZ-O7Z"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="이전 단계로">
-                                    <color key="titleColor" red="0.17750495669999999" green="0.30803060529999998" blue="0.67392182349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqW-cd-ag0">
-                                <rect key="frame" x="364" y="74" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Pzp-6a-OxU"/>
-                                    <constraint firstAttribute="width" constant="30" id="gVy-v9-fNL"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic-cancel"/>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dUd-zx-gCS">
-                                <rect key="frame" x="27" y="288" width="360" height="180"/>
+                                <rect key="frame" x="27" y="272" width="360" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="실내 온도를 아래의 온도범위로 유지할 수 있도록 모니터링합니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2U-FB-ZNI">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="60"/>
@@ -1578,7 +1258,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="K86-bz-3hL">
-                                <rect key="frame" x="27" y="483" width="360" height="110"/>
+                                <rect key="frame" x="27" y="467" width="360" height="110"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGW-5I-Gx1">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="70"/>
@@ -1669,28 +1349,45 @@
                         <viewLayoutGuide key="safeArea" id="D0k-OJ-H5J"/>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="NqW-XA-ynu" firstAttribute="top" secondItem="D0k-OJ-H5J" secondAttribute="top" constant="50" id="1Ak-A2-Ff2"/>
                             <constraint firstItem="JaI-z0-fkx" firstAttribute="centerX" secondItem="cpW-Eb-iWY" secondAttribute="centerX" id="7E8-oP-Ktv"/>
                             <constraint firstItem="zLz-od-Hwx" firstAttribute="centerX" secondItem="cpW-Eb-iWY" secondAttribute="centerX" id="86f-V7-eJM"/>
-                            <constraint firstItem="oay-7p-Pc5" firstAttribute="top" secondItem="zLz-od-Hwx" secondAttribute="bottom" constant="20" id="ADt-ma-wa5"/>
                             <constraint firstItem="dUd-zx-gCS" firstAttribute="leading" secondItem="JaI-z0-fkx" secondAttribute="leading" id="AUb-Mh-7Im"/>
-                            <constraint firstItem="D0k-OJ-H5J" firstAttribute="bottom" secondItem="oay-7p-Pc5" secondAttribute="bottom" constant="30" id="GDU-Nz-qHs"/>
-                            <constraint firstItem="oay-7p-Pc5" firstAttribute="centerX" secondItem="cpW-Eb-iWY" secondAttribute="centerX" id="IbN-Br-2QQ"/>
-                            <constraint firstItem="jqW-cd-ag0" firstAttribute="trailing" secondItem="D0k-OJ-H5J" secondAttribute="trailing" constant="-20" id="ST2-n7-sY5"/>
                             <constraint firstItem="K86-bz-3hL" firstAttribute="leading" secondItem="zLz-od-Hwx" secondAttribute="leading" id="fAC-mL-mES"/>
-                            <constraint firstItem="Via-ow-Gil" firstAttribute="top" secondItem="D0k-OJ-H5J" secondAttribute="top" constant="30" id="hDe-19-TaG"/>
                             <constraint firstItem="dUd-zx-gCS" firstAttribute="top" secondItem="JaI-z0-fkx" secondAttribute="bottom" constant="10" id="iPr-b0-2Ys"/>
-                            <constraint firstItem="Via-ow-Gil" firstAttribute="centerX" secondItem="cpW-Eb-iWY" secondAttribute="centerX" id="k4A-QV-0DD"/>
                             <constraint firstItem="K86-bz-3hL" firstAttribute="top" secondItem="dUd-zx-gCS" secondAttribute="bottom" constant="15" id="mQe-rf-aBw"/>
-                            <constraint firstItem="NqW-XA-ynu" firstAttribute="top" secondItem="jqW-cd-ag0" secondAttribute="bottom" constant="50" id="npP-di-IEI"/>
                             <constraint firstItem="NqW-XA-ynu" firstAttribute="centerX" secondItem="cpW-Eb-iWY" secondAttribute="centerX" id="qP5-sI-ktx"/>
-                            <constraint firstItem="jqW-cd-ag0" firstAttribute="top" secondItem="D0k-OJ-H5J" secondAttribute="top" constant="30" id="qYb-yo-D2f"/>
                             <constraint firstItem="JaI-z0-fkx" firstAttribute="top" secondItem="NqW-XA-ynu" secondAttribute="bottom" constant="30" id="s8P-9q-CG4"/>
+                            <constraint firstItem="D0k-OJ-H5J" firstAttribute="bottom" secondItem="zLz-od-Hwx" secondAttribute="bottom" constant="50" id="w9R-jc-UNZ"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="rs3-5D-cV0">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="QUH-m9-IgX"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="gbd-Fk-RmD"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QVC-NA-Wyr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4103" y="836"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3A3-Mg-6Aq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gh4-VS-ELN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cxi-ci-yOJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="K8a-d8-jNH" kind="relationship" relationship="rootViewController" id="6tq-Rs-Kme"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBn-Pz-A3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-699" y="123"/>
         </scene>
     </scenes>
     <resources>
