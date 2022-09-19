@@ -16,6 +16,9 @@
 		A9B958B928D0375600FFDC08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B958B728D0375600FFDC08 /* LaunchScreen.storyboard */; };
 		A9B958C228D03A4B00FFDC08 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B958C128D03A4B00FFDC08 /* Account.storyboard */; };
 		A9B958C428D041F100FFDC08 /* Device.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B958C328D041F100FFDC08 /* Device.storyboard */; };
+		A9CD69F228D86E15002DD5F9 /* WifiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD69F128D86E15002DD5F9 /* WifiTableViewCell.swift */; };
+		A9CD69F628D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD69F528D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift */; };
+		A9CD69F828D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD69F728D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		A9B958BA28D0375600FFDC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9B958C128D03A4B00FFDC08 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		A9B958C328D041F100FFDC08 /* Device.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Device.storyboard; sourceTree = "<group>"; };
+		A9CD69F128D86E15002DD5F9 /* WifiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiTableViewCell.swift; sourceTree = "<group>"; };
+		A9CD69F528D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeSensorTableViewCell.swift; sourceTree = "<group>"; };
+		A9CD69F728D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeHubTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +69,11 @@
 		A9B958A828D0375400FFDC08 /* MECS */ = {
 			isa = PBXGroup;
 			children = (
-				A9B958A928D0375400FFDC08 /* AppDelegate.swift */,
 				A9B958AB28D0375400FFDC08 /* SceneDelegate.swift */,
-				A9B958AD28D0375400FFDC08 /* ViewController.swift */,
+				A9B958A928D0375400FFDC08 /* AppDelegate.swift */,
+				A9CD69ED28D86D3B002DD5F9 /* Model */,
+				A9CD69EE28D86D4E002DD5F9 /* View */,
+				A9CD69EF28D86D56002DD5F9 /* Controller */,
 				A9B958B528D0375600FFDC08 /* Assets.xcassets */,
 				A9B958BA28D0375600FFDC08 /* Info.plist */,
 				A9B958B228D0375400FFDC08 /* MECS.xcdatamodeld */,
@@ -82,6 +90,39 @@
 				A9B958C328D041F100FFDC08 /* Device.storyboard */,
 			);
 			path = Display;
+			sourceTree = "<group>";
+		};
+		A9CD69ED28D86D3B002DD5F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9CD69EE28D86D4E002DD5F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD69F028D86DA6002DD5F9 /* TableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9CD69EF28D86D56002DD5F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A9B958AD28D0375400FFDC08 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9CD69F028D86DA6002DD5F9 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD69F128D86E15002DD5F9 /* WifiTableViewCell.swift */,
+				A9CD69F528D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift */,
+				A9CD69F728D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B958AE28D0375400FFDC08 /* ViewController.swift in Sources */,
+				A9CD69F828D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift in Sources */,
+				A9CD69F628D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift in Sources */,
 				A9B958B428D0375400FFDC08 /* MECS.xcdatamodeld in Sources */,
+				A9CD69F228D86E15002DD5F9 /* WifiTableViewCell.swift in Sources */,
 				A9B958AA28D0375400FFDC08 /* AppDelegate.swift in Sources */,
 				A9B958AC28D0375400FFDC08 /* SceneDelegate.swift in Sources */,
 			);
