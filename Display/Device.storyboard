@@ -415,41 +415,47 @@
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="67Q-Zj-BQW">
-                                                    <rect key="frame" x="10" y="23" width="374" height="30"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TIn-ck-x9z">
+                                                    <rect key="frame" x="10" y="0.0" width="374" height="67"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wifi1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcF-Qk-fdf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="240" id="3hh-39-9og"/>
-                                                            </constraints>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84J-LQ-Ev6">
+                                                            <rect key="frame" x="0.0" y="23.5" width="294" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-lock" translatesAutoresizingMaskIntoConstraints="NO" id="Zk2-cZ-ifr">
-                                                            <rect key="frame" x="309" y="0.0" width="30" height="30"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-lock" translatesAutoresizingMaskIntoConstraints="NO" id="j3L-Eh-2bQ">
+                                                            <rect key="frame" x="304" y="18.5" width="30" height="30"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="30" id="kgX-Pl-ePQ"/>
-                                                                <constraint firstAttribute="height" constant="30" id="wZN-KI-yFf"/>
+                                                                <constraint firstAttribute="height" constant="30" id="EH5-DO-wN2"/>
+                                                                <constraint firstAttribute="width" constant="30" id="egy-TV-Stg"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-wifi-high" translatesAutoresizingMaskIntoConstraints="NO" id="23y-DQ-Z0G">
-                                                            <rect key="frame" x="344" y="0.0" width="30" height="30"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-wifi-high" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-pk-cnv">
+                                                            <rect key="frame" x="344" y="18.5" width="30" height="30"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="30" id="WBw-Xx-Ul6"/>
-                                                                <constraint firstAttribute="height" constant="30" id="hBq-2H-gk4"/>
+                                                                <constraint firstAttribute="height" constant="30" id="5ep-3J-cSr"/>
+                                                                <constraint firstAttribute="width" constant="30" id="qCN-nB-lrZ"/>
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="j1P-pk-cnv" firstAttribute="leading" secondItem="j3L-Eh-2bQ" secondAttribute="trailing" constant="10" id="jza-7w-5BG"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="67Q-Zj-BQW" firstAttribute="top" secondItem="3zL-sR-KmV" secondAttribute="topMargin" constant="12" id="5IO-vd-5ur"/>
-                                                <constraint firstAttribute="trailing" secondItem="67Q-Zj-BQW" secondAttribute="trailing" constant="10" id="7fL-RF-U9X"/>
-                                                <constraint firstItem="67Q-Zj-BQW" firstAttribute="leading" secondItem="3zL-sR-KmV" secondAttribute="leading" constant="10" id="9LK-NQ-tre"/>
+                                                <constraint firstItem="TIn-ck-x9z" firstAttribute="leading" secondItem="3zL-sR-KmV" secondAttribute="leading" constant="10" id="3Jn-bu-oTT"/>
+                                                <constraint firstAttribute="trailing" secondItem="TIn-ck-x9z" secondAttribute="trailing" constant="10" id="J9B-x4-dyQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="TIn-ck-x9z" secondAttribute="bottom" id="XBk-C5-Smy"/>
+                                                <constraint firstItem="TIn-ck-x9z" firstAttribute="top" secondItem="3zL-sR-KmV" secondAttribute="top" id="ri6-hb-iKt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lockImageView" destination="j3L-Eh-2bQ" id="jl2-80-OOI"/>
+                                            <outlet property="wifiImageView" destination="j1P-pk-cnv" id="3AI-5W-OQb"/>
+                                            <outlet property="wifiNameLabel" destination="TIn-ck-x9z" id="nuO-5g-yba"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

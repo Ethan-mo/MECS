@@ -48,6 +48,9 @@
                                                                     </constraints>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="ic-help"/>
+                                                                    <connections>
+                                                                        <action selector="sensorHelpButton:" destination="6Rf-yo-Nu9" eventType="touchUpInside" id="ZEh-Zp-Cam"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -62,6 +65,9 @@
                                                                     </constraints>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="ic-diaperchange"/>
+                                                                    <connections>
+                                                                        <action selector="changeButton:" destination="6Rf-yo-Nu9" eventType="touchUpInside" id="QqM-hi-7iz"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gr1-zk-Q0S">
                                                                     <rect key="frame" x="10" y="10" width="294" height="235"/>
@@ -105,6 +111,9 @@
                                                                                     <rect key="frame" x="154.5" y="6" width="139.5" height="31"/>
                                                                                     <state key="normal" title="Button"/>
                                                                                     <buttonConfiguration key="configuration" style="filled" title="기록 자세히 보기"/>
+                                                                                    <connections>
+                                                                                        <action selector="detailLogButton:" destination="6Rf-yo-Nu9" eventType="touchUpInside" id="d9T-eO-MGg"/>
+                                                                                    </connections>
                                                                                 </button>
                                                                             </subviews>
                                                                         </stackView>
@@ -165,6 +174,18 @@
                                                 <constraint firstItem="7s4-hy-vD6" firstAttribute="centerY" secondItem="lDJ-cN-G6k" secondAttribute="centerY" id="UYq-P4-hSF"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="changeCountLabel" destination="KfY-aO-CJV" id="LHY-3T-2GL"/>
+                                            <outlet property="changeTimeLabel" destination="Ikv-i3-Yek" id="4vB-Te-W5A"/>
+                                            <outlet property="diaperSensorLabel" destination="dsd-3f-tTx" id="SwZ-Al-AxC"/>
+                                            <outlet property="sensorNameLabel" destination="piP-aW-nya" id="I37-rQ-Yp3"/>
+                                            <outlet property="sensorView" destination="Kej-Ok-kqq" id="eg5-y5-yOz"/>
+                                            <outlet property="stateConnectWifiImage" destination="xZo-rg-yKB" id="hqx-3g-O7h"/>
+                                            <outlet property="stateSensorImage" destination="W8y-DP-osN" id="WZR-FT-hid"/>
+                                            <outlet property="stateSensorLabel" destination="3IG-qQ-OaK" id="PFe-9L-3hE"/>
+                                            <outlet property="strapBatteryImage" destination="j2t-rE-ZdS" id="p46-nV-9mx"/>
+                                            <outlet property="strapLabel" destination="YC8-Eh-Ql1" id="CTA-DC-lXm"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="314" id="PUI-nf-HxQ" customClass="MainHomeHubTableViewCell" customModule="MECS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="369.5" width="414" height="314"/>
@@ -193,6 +214,9 @@
                                                                     </constraints>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="ic-help"/>
+                                                                    <connections>
+                                                                        <action selector="hubHelpButton:" destination="PUI-nf-HxQ" eventType="touchUpInside" id="IDL-Dn-caL"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -240,13 +264,13 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OyE-8q-CqH">
                                                                             <rect key="frame" x="0.0" y="144" width="294" height="43"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마지막교체" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0z-Od-joh">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="실내 온도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0z-Od-joh">
                                                                                     <rect key="frame" x="0.0" y="11.5" width="139.5" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마지막교체" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvv-rl-pKn">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="실내 습도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvv-rl-pKn">
                                                                                     <rect key="frame" x="154.5" y="11.5" width="139.5" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <nil key="textColor"/>
@@ -302,6 +326,16 @@
                                                 </stackView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="changeHumLabel" destination="xjo-95-aUP" id="oug-eY-P7Y"/>
+                                            <outlet property="changeTemLabel" destination="dh8-9F-ol1" id="9Ea-eU-J7r"/>
+                                            <outlet property="hubNameLabel" destination="9hm-oP-jT7" id="Ojk-NN-uxw"/>
+                                            <outlet property="hubView" destination="sll-jm-vkJ" id="fAg-cE-iLX"/>
+                                            <outlet property="stateConnectWifiImage" destination="qNq-gZ-CVJ" id="S4k-Gd-5iY"/>
+                                            <outlet property="stateHubImage" destination="tgv-pv-ziw" id="pL8-IF-Oh5"/>
+                                            <outlet property="stateHubLabel" destination="nqJ-G1-Mbu" id="Rxc-a7-EUi"/>
+                                            <outlet property="wifiNameLabel" destination="oSY-7T-2uz" id="9b4-Hn-run"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
