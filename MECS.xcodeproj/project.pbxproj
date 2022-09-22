@@ -10,6 +10,8 @@
 		A9662A0F28DB0C5400E0666E /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9662A0E28DB0C5400E0666E /* Sensor.swift */; };
 		A9662A1128DB0C5F00E0666E /* Hub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9662A1028DB0C5F00E0666E /* Hub.swift */; };
 		A9662A1328DB10C500E0666E /* MainHomeTableCellSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9662A1228DB10C500E0666E /* MainHomeTableCellSensor.swift */; };
+		A9A2D4E928DC547100511F68 /* WifiSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2D4E828DC547100511F68 /* WifiSelectViewController.swift */; };
+		A9A2D4EB28DC554700511F68 /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2D4EA28DC554700511F68 /* Wifi.swift */; };
 		A9B958AA28D0375400FFDC08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B958A928D0375400FFDC08 /* AppDelegate.swift */; };
 		A9B958AC28D0375400FFDC08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B958AB28D0375400FFDC08 /* SceneDelegate.swift */; };
 		A9B958AE28D0375400FFDC08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B958AD28D0375400FFDC08 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		A9662A0E28DB0C5400E0666E /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
 		A9662A1028DB0C5F00E0666E /* Hub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hub.swift; sourceTree = "<group>"; };
 		A9662A1228DB10C500E0666E /* MainHomeTableCellSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeTableCellSensor.swift; sourceTree = "<group>"; };
+		A9A2D4E828DC547100511F68 /* WifiSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiSelectViewController.swift; sourceTree = "<group>"; };
+		A9A2D4EA28DC554700511F68 /* Wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
 		A9B958A628D0375400FFDC08 /* MECS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MECS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B958A928D0375400FFDC08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9B958AB28D0375400FFDC08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				A9662A0E28DB0C5400E0666E /* Sensor.swift */,
 				A9662A1028DB0C5F00E0666E /* Hub.swift */,
 				A9662A1228DB10C500E0666E /* MainHomeTableCellSensor.swift */,
+				A9A2D4EA28DC554700511F68 /* Wifi.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			children = (
 				A9B958AD28D0375400FFDC08 /* ViewController.swift */,
 				A9CD69F928D9C17B002DD5F9 /* MainHomeViewController.swift */,
+				A9A2D4E828DC547100511F68 /* WifiSelectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 				A9B958AE28D0375400FFDC08 /* ViewController.swift in Sources */,
 				A9CD69F828D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift in Sources */,
 				A9CD69F628D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift in Sources */,
+				A9A2D4E928DC547100511F68 /* WifiSelectViewController.swift in Sources */,
 				A9B958B428D0375400FFDC08 /* MECS.xcdatamodeld in Sources */,
 				A9662A0F28DB0C5400E0666E /* Sensor.swift in Sources */,
 				A9662A1128DB0C5F00E0666E /* Hub.swift in Sources */,
@@ -220,6 +227,7 @@
 				A9CD69F228D86E15002DD5F9 /* WifiTableViewCell.swift in Sources */,
 				A9B958AA28D0375400FFDC08 /* AppDelegate.swift in Sources */,
 				A9B958AC28D0375400FFDC08 /* SceneDelegate.swift in Sources */,
+				A9A2D4EB28DC554700511F68 /* Wifi.swift in Sources */,
 				A9662A1328DB10C500E0666E /* MainHomeTableCellSensor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

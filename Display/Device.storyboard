@@ -366,7 +366,7 @@
         <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="Ztr-d3-5id">
             <objects>
-                <viewController id="t7d-Cz-VTn" sceneMemberID="viewController">
+                <viewController id="t7d-Cz-VTn" customClass="WifiSelectViewController" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z1S-HY-dMs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -480,6 +480,9 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="1CR-Hb-Zj3"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="z3H-pN-lXP"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="wifiSelectTableView" destination="RTg-Pv-GJw" id="M68-RL-zvJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDY-46-mpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
