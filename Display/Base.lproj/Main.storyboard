@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8pS-Yi-WJB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -350,7 +350,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zEn-pm-CrR">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-list" id="C7N-La-7Bo"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-list" id="C7N-La-7Bo">
+                            <connections>
+                                <segue destination="Mpz-7W-jnw" kind="custom" id="JyR-ou-SPx"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ic-history" id="kk9-sL-qjt"/>
                     </navigationItem>
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="919"/>
@@ -359,6 +363,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="114.50892857142857"/>
+        </scene>
+        <!--Main Home Side View Controller-->
+        <scene sceneID="cxK-Tf-MLL">
+            <objects>
+                <viewController id="Mpz-7W-jnw" customClass="MainHomeSideViewController" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GzB-sK-A9O">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xw8-Tp-dBx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <size key="freeformSize" width="360" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNd-5A-abQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904" y="115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gGh-8h-dfM">

@@ -9,9 +9,11 @@ import UIKit
 
 class WifiTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var wifiNameLabel: UIStackView!
-    @IBOutlet weak var lockImageView: UIImageView!
+    
+    @IBOutlet weak var wifiNameLabel: UILabel!
+    @IBOutlet weak var lockImageView: UIImageView?
     @IBOutlet weak var wifiImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

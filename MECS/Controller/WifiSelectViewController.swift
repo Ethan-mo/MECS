@@ -28,6 +28,16 @@ extension WifiSelectViewController: UITableViewDataSource{
         return wifiArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WifiCell", for: indexPath) as! WifiTableViewCell
+        cell.wifiNameLabel.text = wifiArray[indexPath.row].wifiName
+        if wifiArray[indexPath.row].wifiLock == true {
+            cell.lockImageView?.isHidden = true
+        }else{
+            cell.lockImageView?.isHidden = false
+        }
+        
+        
+        cell.wifiImageView
         return UITableViewCell()
     }
     
