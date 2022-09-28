@@ -13,7 +13,7 @@
         <!--기기 연결하기-->
         <scene sceneID="qnU-QB-Gy2">
             <objects>
-                <viewController id="K8a-d8-jNH" sceneMemberID="viewController">
+                <viewController id="K8a-d8-jNH" customClass="DeviceViewController_1" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XMU-iI-oXW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,8 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
-                                            <segue destination="JoR-SR-s3o" kind="show" id="lco-Se-tE8"/>
+                                            <action selector="nextPageBtn:" destination="K8a-d8-jNH" eventType="touchUpInside" id="CQt-4b-lt0"/>
+                                            <segue destination="JoR-SR-s3o" kind="show" identifier="1to2" id="lco-Se-tE8"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tq6-tl-Hzl">
@@ -92,7 +93,7 @@
         <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="Xg9-j5-7gF">
             <objects>
-                <viewController id="JoR-SR-s3o" sceneMemberID="viewController">
+                <viewController id="JoR-SR-s3o" customClass="DeviceViewController_2" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hep-7L-Mps">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,7 +137,8 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="S6L-3F-iFN" kind="show" id="psH-vJ-rtB"/>
+                                    <action selector="nextPageBtn:" destination="JoR-SR-s3o" eventType="touchUpInside" id="nxA-3P-Zwx"/>
+                                    <segue destination="S6L-3F-iFN" kind="show" identifier="2to3" id="psH-vJ-rtB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -218,7 +220,7 @@
         <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="b8I-0u-Rx0">
             <objects>
-                <viewController id="S6L-3F-iFN" sceneMemberID="viewController">
+                <viewController id="S6L-3F-iFN" customClass="DeviceViewController_3" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6P3-9U-O3i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,7 +264,8 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mf5-iw-gQb" kind="show" id="jnj-a8-Hsi"/>
+                                    <action selector="nextPageBtn:" destination="S6L-3F-iFN" eventType="touchUpInside" id="FL1-Od-M75"/>
+                                    <segue destination="mf5-iw-gQb" kind="show" identifier="3to4" id="jnj-a8-Hsi"/>
                                 </connections>
                             </button>
                         </subviews>
