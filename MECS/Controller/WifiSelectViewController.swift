@@ -21,6 +21,9 @@ class WifiSelectViewController: UIViewController {
 
    
 
+    @IBAction func nextButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "5to6", sender: nil)
+    }
 }
 
 extension WifiSelectViewController: UITableViewDataSource{

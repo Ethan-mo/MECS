@@ -9,5 +9,4 @@ import UIKit
 struct Wifi{
     var wifiName: String?
     var wifiLock: Bool = false
-    enum wifiForce: Int 
 }

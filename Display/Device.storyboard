@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gh4-VS-ELN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -13,7 +13,7 @@
         <!--기기 연결하기-->
         <scene sceneID="qnU-QB-Gy2">
             <objects>
-                <viewController id="K8a-d8-jNH" customClass="DeviceViewController_1" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceViewController_1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K8a-d8-jNH" customClass="DeviceViewController_1" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XMU-iI-oXW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,19 +27,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhD-kd-gfE">
                                 <rect key="frame" x="27" y="194.5" width="360" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0b-ct-scc">
-                                        <rect key="frame" x="0.0" y="0.0" width="360" height="120"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="8po-ho-xMP"/>
-                                            <constraint firstAttribute="width" constant="360" id="zeN-4W-q2u"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain"/>
-                                        <connections>
-                                            <action selector="nextPageBtn:" destination="K8a-d8-jNH" eventType="touchUpInside" id="CQt-4b-lt0"/>
-                                            <segue destination="JoR-SR-s3o" kind="show" identifier="1to2" id="lco-Se-tE8"/>
-                                        </connections>
-                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tq6-tl-Hzl">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="120"/>
                                         <subviews>
@@ -66,8 +53,6 @@
                                 <constraints>
                                     <constraint firstItem="Tq6-tl-Hzl" firstAttribute="top" secondItem="IhD-kd-gfE" secondAttribute="top" id="Qxt-jz-f7I"/>
                                     <constraint firstAttribute="width" constant="360" id="a44-pM-Ram"/>
-                                    <constraint firstItem="R0b-ct-scc" firstAttribute="centerX" secondItem="IhD-kd-gfE" secondAttribute="centerX" id="aqX-m4-8Ov"/>
-                                    <constraint firstItem="R0b-ct-scc" firstAttribute="centerY" secondItem="IhD-kd-gfE" secondAttribute="centerY" id="crI-LC-P0g"/>
                                     <constraint firstAttribute="height" constant="120" id="k8t-kv-nEU"/>
                                     <constraint firstItem="Tq6-tl-Hzl" firstAttribute="centerX" secondItem="IhD-kd-gfE" secondAttribute="centerX" id="xzN-cp-1pj"/>
                                 </constraints>
@@ -85,6 +70,10 @@
                     <navigationItem key="navigationItem" title="기기 연결하기" id="t1V-Qg-zus">
                         <barButtonItem key="backBarButtonItem" title="이전단계" id="mVb-8g-niS"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="selectView" destination="IhD-kd-gfE" id="Mgm-qm-DUm"/>
+                        <segue destination="JoR-SR-s3o" kind="push" identifier="1to2" id="BvD-92-gHH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmq-hg-AaP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +82,7 @@
         <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="Xg9-j5-7gF">
             <objects>
-                <viewController id="JoR-SR-s3o" customClass="DeviceViewController_2" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceVC2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JoR-SR-s3o" customClass="DeviceViewController_2" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hep-7L-Mps">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +127,6 @@
                                 </state>
                                 <connections>
                                     <action selector="nextPageBtn:" destination="JoR-SR-s3o" eventType="touchUpInside" id="nxA-3P-Zwx"/>
-                                    <segue destination="S6L-3F-iFN" kind="show" identifier="2to3" id="psH-vJ-rtB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,6 +147,9 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="GYt-77-B0W"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="VER-Xm-HPL"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="S6L-3F-iFN" kind="push" identifier="2to3" id="JS2-iE-5Ot"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNh-9v-q5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,7 +256,6 @@
                                 </state>
                                 <connections>
                                     <action selector="nextPageBtn:" destination="S6L-3F-iFN" eventType="touchUpInside" id="FL1-Od-M75"/>
-                                    <segue destination="mf5-iw-gQb" kind="show" identifier="3to4" id="jnj-a8-Hsi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -287,6 +277,9 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="xg7-vD-5Bj"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="tUz-dF-NuF"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="mf5-iw-gQb" kind="push" identifier="3to4" id="mjz-Bp-Mt9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idm-9w-mgy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,7 +288,7 @@
         <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="IGI-xx-KJ8">
             <objects>
-                <viewController id="mf5-iw-gQb" sceneMemberID="viewController">
+                <viewController id="mf5-iw-gQb" customClass="DeviceViewController_4" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W8Q-A8-M7b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,7 +332,7 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="t7d-Cz-VTn" kind="show" id="1zo-dU-X3B"/>
+                                    <action selector="nextButton:" destination="mf5-iw-gQb" eventType="touchUpInside" id="QA3-vA-cVy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -361,6 +354,9 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="402-Eo-u8X"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="dZA-1C-ckc"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="t7d-Cz-VTn" kind="push" identifier="4to5" id="BvI-OG-z8G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FYd-Pg-IUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -404,7 +400,7 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8Bc-Kt-Ar8" kind="show" id="nKv-Mj-BKQ"/>
+                                    <action selector="nextButton:" destination="t7d-Cz-VTn" eventType="touchUpInside" id="f5Y-CD-CA3"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RTg-Pv-GJw">
@@ -485,6 +481,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="wifiSelectTableView" destination="RTg-Pv-GJw" id="M68-RL-zvJ"/>
+                        <segue destination="8Bc-Kt-Ar8" kind="push" identifier="5to6" id="tMq-Rt-ioF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDY-46-mpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -494,7 +491,7 @@
         <!--원형센서 + 알림등 연결하기-->
         <scene sceneID="wM0-TE-V7Y">
             <objects>
-                <viewController id="8Bc-Kt-Ar8" sceneMemberID="viewController">
+                <viewController id="8Bc-Kt-Ar8" customClass="DeviceViewController_6" customModule="MECS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y4w-Hv-fE4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -529,7 +526,8 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hrD-Cg-syt" kind="show" id="AH5-MY-gy1"/>
+                                    <action selector="nextButton:" destination="8Bc-Kt-Ar8" eventType="touchUpInside" id="X9G-3l-UV4"/>
+                                    <segue destination="hrD-Cg-syt" kind="push" identifier="6to7" id="AH5-MY-gy1"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Prp-aT-TJd">

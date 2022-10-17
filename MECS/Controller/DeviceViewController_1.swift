@@ -9,24 +9,22 @@ import UIKit
 
 class DeviceViewController_1: UIViewController {
 
+    @IBOutlet weak var selectView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        제스처부여하기()
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func 제스처부여하기(){
+        let tapGestureImageView = UITapGestureRecognizer(target: self, action: #selector(뷰를눌렀을때))
+        selectView.addGestureRecognizer(tapGestureImageView) // 제스처를 추가....
+        selectView.isUserInteractionEnabled = true // 유저와의 소통을 가능하게...
     }
-    */
-
-    @IBAction func nextPageBtn(_ sender: UIButton) {
+    @objc func 뷰를눌렀을때(){
         performSegue(withIdentifier: "1to2", sender: nil)
+        let vc = DeviceViewController_2()
+        vc.modalPresentationStyle = .fullScreen
+        print("Tap")
     }
+
 }
