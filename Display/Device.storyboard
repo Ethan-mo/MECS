@@ -71,6 +71,8 @@
                         <barButtonItem key="backBarButtonItem" title="이전단계" id="mVb-8g-niS"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionLabel" destination="Sjf-bn-bCi" id="rWh-tG-s7G"/>
+                        <outlet property="deviceNameLabel" destination="uW8-i9-asG" id="ZA8-ha-iMw"/>
                         <outlet property="selectView" destination="IhD-kd-gfE" id="Mgm-qm-DUm"/>
                         <segue destination="JoR-SR-s3o" kind="push" identifier="1to2" id="BvD-92-gHH"/>
                     </connections>
@@ -126,7 +128,7 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextPageBtn:" destination="JoR-SR-s3o" eventType="touchUpInside" id="nxA-3P-Zwx"/>
+                                    <action selector="nextePageBtnTapped:" destination="JoR-SR-s3o" eventType="touchUpInside" id="niR-6Y-HfZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -144,10 +146,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="mzp-0G-4jn">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="GYt-77-B0W"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="VER-Xm-HPL"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="GYt-77-B0W">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="backPageBtnTapped:" destination="JoR-SR-s3o" id="VgO-LY-foi"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="VER-Xm-HPL">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="exitPageBtnTapped:" destination="JoR-SR-s3o" id="2d1-2Y-Z5f"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionLabel" destination="c3e-XO-wTs" id="jVl-gH-eAk"/>
+                        <outlet property="nextPageBtn" destination="fNb-yf-SKp" id="FSQ-rx-wPY"/>
                         <segue destination="S6L-3F-iFN" kind="push" identifier="2to3" id="JS2-iE-5Ot"/>
                     </connections>
                 </viewController>
@@ -255,7 +269,7 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextPageBtn:" destination="S6L-3F-iFN" eventType="touchUpInside" id="FL1-Od-M75"/>
+                                    <action selector="nextPageBtnTapped:" destination="S6L-3F-iFN" eventType="touchUpInside" id="Fo2-DN-JeN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -274,10 +288,22 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="0iz-DC-IeD">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="xg7-vD-5Bj"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="tUz-dF-NuF"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="xg7-vD-5Bj">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="backPageBtnTapped:" destination="S6L-3F-iFN" id="eLo-Za-OvA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="tUz-dF-NuF">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="exitPageBtnTapped:" destination="S6L-3F-iFN" id="WWc-rN-bGU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionLabel" destination="JAx-dJ-qpT" id="NfA-EW-yDO"/>
+                        <outlet property="nextPageBtn" destination="NIj-Ji-Pqu" id="d8o-tN-XUV"/>
                         <segue destination="mf5-iw-gQb" kind="push" identifier="3to4" id="mjz-Bp-Mt9"/>
                     </connections>
                 </viewController>
@@ -332,7 +358,7 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButton:" destination="mf5-iw-gQb" eventType="touchUpInside" id="QA3-vA-cVy"/>
+                                    <action selector="nextPageBtnTapped:" destination="mf5-iw-gQb" eventType="touchUpInside" id="T0s-1w-GuV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -351,10 +377,22 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="2DW-8O-DGZ">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="402-Eo-u8X"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="dZA-1C-ckc"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="402-Eo-u8X">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="backPageBtnTapped:" destination="mf5-iw-gQb" id="97F-4b-L1k"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="dZA-1C-ckc">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="exitPageBtnTapped:" destination="mf5-iw-gQb" id="k0U-96-bSt"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionLabel" destination="C38-5j-DK6" id="lgS-mh-uvl"/>
+                        <outlet property="nextPageBtn" destination="qVH-H7-xIV" id="QBU-KX-Acf"/>
                         <segue destination="t7d-Cz-VTn" kind="push" identifier="4to5" id="BvI-OG-z8G"/>
                     </connections>
                 </viewController>
@@ -400,7 +438,7 @@
                                     <color key="titleColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButton:" destination="t7d-Cz-VTn" eventType="touchUpInside" id="f5Y-CD-CA3"/>
+                                    <action selector="nextButton:" destination="t7d-Cz-VTn" eventType="touchUpInside" id="bVK-3g-Tau"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RTg-Pv-GJw">
@@ -476,10 +514,22 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="wm8-xQ-CHh">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="1CR-Hb-Zj3"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="z3H-pN-lXP"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="1CR-Hb-Zj3">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="backPageBtnTapped:" destination="t7d-Cz-VTn" id="Jie-fH-d2g"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="z3H-pN-lXP">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="exitPageBtnTapped:" destination="t7d-Cz-VTn" id="90p-bW-Ct9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionLabel" destination="4Yw-Ri-9R6" id="Jkb-xD-v1E"/>
+                        <outlet property="nextPageBtn" destination="XFf-gY-NOh" id="p8b-wP-h30"/>
                         <outlet property="wifiSelectTableView" destination="RTg-Pv-GJw" id="M68-RL-zvJ"/>
                         <segue destination="8Bc-Kt-Ar8" kind="push" identifier="5to6" id="tMq-Rt-ioF"/>
                     </connections>
@@ -540,8 +590,11 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2C-tJ-tN3">
                                         <rect key="frame" x="312" y="0.0" width="48" height="60"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="ic-eye-open"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="ic-eye-open"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic-eye-open">
+                                            <attributedString key="attributedTitle"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -565,8 +618,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="원형센서 + 알림등 연결하기" id="i5G-kM-CBh">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="pr7-Bj-ibP"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="Va4-zl-0cY"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic-back" id="pr7-Bj-ibP">
+                            <color key="tintColor" systemColor="labelColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic-cancel" id="Va4-zl-0cY">
+                            <color key="tintColor" systemColor="labelColor"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2n-Va-sKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1466,6 +1523,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

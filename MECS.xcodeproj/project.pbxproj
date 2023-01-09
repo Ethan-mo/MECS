@@ -16,6 +16,30 @@
 		A9A2D4E928DC547100511F68 /* WifiSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2D4E828DC547100511F68 /* WifiSelectViewController.swift */; };
 		A9A2D4EB28DC554700511F68 /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2D4EA28DC554700511F68 /* Wifi.swift */; };
 		A9A2D51D28DD8B8000511F68 /* MainHomeSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2D51C28DD8B8000511F68 /* MainHomeSideViewController.swift */; };
+		A9AAD9FB296C1FE4003D6BBF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AAD9FA296C1FE4003D6BBF /* Config.swift */; };
+		A9AAD9FE296C205D003D6BBF /* WifiSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AAD9FD296C205D003D6BBF /* WifiSelectView.swift */; };
+		A9AADA04296C2239003D6BBF /* BleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA03296C2239003D6BBF /* BleInfo.swift */; };
+		A9AADA07296C2288003D6BBF /* SensorStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA06296C2288003D6BBF /* SensorStatusInfo.swift */; };
+		A9AADA0A296C22F6003D6BBF /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA09296C22F6003D6BBF /* Debug.swift */; };
+		A9AADA0C296C23D1003D6BBF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA0B296C23D1003D6BBF /* DataManager.swift */; };
+		A9AADA0F296C2411003D6BBF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA0E296C2411003D6BBF /* DataController.swift */; };
+		A9AADA12296C246A003D6BBF /* DataController_UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA11296C246A003D6BBF /* DataController_UserInfo.swift */; };
+		A9AADA14296C2522003D6BBF /* DataController_ShareMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA13296C2522003D6BBF /* DataController_ShareMember.swift */; };
+		A9AADA16296C2541003D6BBF /* DataController_ShareDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA15296C2541003D6BBF /* DataController_ShareDevice.swift */; };
+		A9AADA18296C2619003D6BBF /* DataController_DeviceNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA17296C2619003D6BBF /* DataController_DeviceNoti.swift */; };
+		A9AADA1A296C268D003D6BBF /* DataController_StoreConnectedSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA19296C268D003D6BBF /* DataController_StoreConnectedSensor.swift */; };
+		A9AADA1C296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA1B296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift */; };
+		A9AADA1E296C26CF003D6BBF /* DataController_DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA1D296C26CF003D6BBF /* DataController_DeviceStatus.swift */; };
+		A9AADA20296C26EC003D6BBF /* DataController_ShareMemberNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA1F296C26EC003D6BBF /* DataController_ShareMemberNoti.swift */; };
+		A9AADA22296C2702003D6BBF /* DataController_HubGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA21296C2702003D6BBF /* DataController_HubGraph.swift */; };
+		A9AADA24296C2722003D6BBF /* DataController_LampGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA23296C2722003D6BBF /* DataController_LampGraph.swift */; };
+		A9AADA26296C2738003D6BBF /* DataController_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA25296C2738003D6BBF /* DataController_Widget.swift */; };
+		A9AADA28296C2749003D6BBF /* DataController_SensorMovGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA27296C2749003D6BBF /* DataController_SensorMovGraph.swift */; };
+		A9AADA2A296C275E003D6BBF /* DataController_SensorVocGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA29296C275E003D6BBF /* DataController_SensorVocGraph.swift */; };
+		A9AADA2C296C277B003D6BBF /* DataController_DiaperSensingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA2B296C277B003D6BBF /* DataController_DiaperSensingLog.swift */; };
+		A9AADA2F296C27D5003D6BBF /* DataController_NewAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA2E296C27D5003D6BBF /* DataController_NewAlarm.swift */; };
+		A9AADA32296C280F003D6BBF /* DataContoller_Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA31296C280F003D6BBF /* DataContoller_Device.swift */; };
+		A9AADA34296C282A003D6BBF /* DataController_DeviceNotiReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA33296C282A003D6BBF /* DataController_DeviceNotiReady.swift */; };
 		A9B958AA28D0375400FFDC08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B958A928D0375400FFDC08 /* AppDelegate.swift */; };
 		A9B958AC28D0375400FFDC08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B958AB28D0375400FFDC08 /* SceneDelegate.swift */; };
 		A9B958AE28D0375400FFDC08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B958AD28D0375400FFDC08 /* ViewController.swift */; };
@@ -43,6 +67,30 @@
 		A9A2D4E828DC547100511F68 /* WifiSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiSelectViewController.swift; sourceTree = "<group>"; };
 		A9A2D4EA28DC554700511F68 /* Wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
 		A9A2D51C28DD8B8000511F68 /* MainHomeSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeSideViewController.swift; sourceTree = "<group>"; };
+		A9AAD9FA296C1FE4003D6BBF /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A9AAD9FD296C205D003D6BBF /* WifiSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiSelectView.swift; sourceTree = "<group>"; };
+		A9AADA03296C2239003D6BBF /* BleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleInfo.swift; sourceTree = "<group>"; };
+		A9AADA06296C2288003D6BBF /* SensorStatusInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorStatusInfo.swift; sourceTree = "<group>"; };
+		A9AADA09296C22F6003D6BBF /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		A9AADA0B296C23D1003D6BBF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A9AADA0E296C2411003D6BBF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		A9AADA11296C246A003D6BBF /* DataController_UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_UserInfo.swift; sourceTree = "<group>"; };
+		A9AADA13296C2522003D6BBF /* DataController_ShareMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_ShareMember.swift; sourceTree = "<group>"; };
+		A9AADA15296C2541003D6BBF /* DataController_ShareDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_ShareDevice.swift; sourceTree = "<group>"; };
+		A9AADA17296C2619003D6BBF /* DataController_DeviceNoti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_DeviceNoti.swift; sourceTree = "<group>"; };
+		A9AADA19296C268D003D6BBF /* DataController_StoreConnectedSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_StoreConnectedSensor.swift; sourceTree = "<group>"; };
+		A9AADA1B296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_StoreConnectedLamp.swift; sourceTree = "<group>"; };
+		A9AADA1D296C26CF003D6BBF /* DataController_DeviceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_DeviceStatus.swift; sourceTree = "<group>"; };
+		A9AADA1F296C26EC003D6BBF /* DataController_ShareMemberNoti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_ShareMemberNoti.swift; sourceTree = "<group>"; };
+		A9AADA21296C2702003D6BBF /* DataController_HubGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_HubGraph.swift; sourceTree = "<group>"; };
+		A9AADA23296C2722003D6BBF /* DataController_LampGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_LampGraph.swift; sourceTree = "<group>"; };
+		A9AADA25296C2738003D6BBF /* DataController_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_Widget.swift; sourceTree = "<group>"; };
+		A9AADA27296C2749003D6BBF /* DataController_SensorMovGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_SensorMovGraph.swift; sourceTree = "<group>"; };
+		A9AADA29296C275E003D6BBF /* DataController_SensorVocGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_SensorVocGraph.swift; sourceTree = "<group>"; };
+		A9AADA2B296C277B003D6BBF /* DataController_DiaperSensingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_DiaperSensingLog.swift; sourceTree = "<group>"; };
+		A9AADA2E296C27D5003D6BBF /* DataController_NewAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_NewAlarm.swift; sourceTree = "<group>"; };
+		A9AADA31296C280F003D6BBF /* DataContoller_Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContoller_Device.swift; sourceTree = "<group>"; };
+		A9AADA33296C282A003D6BBF /* DataController_DeviceNotiReady.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_DeviceNotiReady.swift; sourceTree = "<group>"; };
 		A9B958A628D0375400FFDC08 /* MECS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MECS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B958A928D0375400FFDC08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9B958AB28D0375400FFDC08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +121,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9AAD9F8296C098E003D6BBF /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				A9A2D4E828DC547100511F68 /* WifiSelectViewController.swift */,
+				A9A0D1BC28E4387400230653 /* DeviceViewController_1.swift */,
+				A9A0D1BE28E4391100230653 /* DeviceViewController_2.swift */,
+				A9A0D1C028E43A5600230653 /* DeviceViewController_3.swift */,
+				A9C2A69E28FCF3E7000EB06D /* DeviceViewController_4.swift */,
+				A9C2A6A028FCF49B000EB06D /* DeviceViewController_6.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		A9AAD9FC296C2048003D6BBF /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A9AAD9FD296C205D003D6BBF /* WifiSelectView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		A9AAD9FF296C21EC003D6BBF /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A9AADA08296C22EB003D6BBF /* Utils */,
+				A9AADA05296C225A003D6BBF /* Models */,
+				A9AADA00296C21FE003D6BBF /* Manager */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		A9AADA00296C21FE003D6BBF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A9AAD9FA296C1FE4003D6BBF /* Config.swift */,
+				A9AADA01296C2207003D6BBF /* DataManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A9AADA01296C2207003D6BBF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A9AADA0D296C2402003D6BBF /* DataController */,
+				A9AADA02296C2212003D6BBF /* UserInfo */,
+				A9AADA0B296C23D1003D6BBF /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		A9AADA02296C2212003D6BBF /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A9AADA03296C2239003D6BBF /* BleInfo.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		A9AADA05296C225A003D6BBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9AADA06296C2288003D6BBF /* SensorStatusInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9AADA08296C22EB003D6BBF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9AADA09296C22F6003D6BBF /* Debug.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A9AADA0D296C2402003D6BBF /* DataController */ = {
+			isa = PBXGroup;
+			children = (
+				A9AADA2D296C27CA003D6BBF /* NewAlarm */,
+				A9AADA0E296C2411003D6BBF /* DataController.swift */,
+				A9AADA29296C275E003D6BBF /* DataController_SensorVocGraph.swift */,
+				A9AADA17296C2619003D6BBF /* DataController_DeviceNoti.swift */,
+				A9AADA19296C268D003D6BBF /* DataController_StoreConnectedSensor.swift */,
+				A9AADA10296C2449003D6BBF /* UserInfo */,
+				A9AADA1B296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift */,
+				A9AADA1D296C26CF003D6BBF /* DataController_DeviceStatus.swift */,
+				A9AADA1F296C26EC003D6BBF /* DataController_ShareMemberNoti.swift */,
+				A9AADA21296C2702003D6BBF /* DataController_HubGraph.swift */,
+				A9AADA23296C2722003D6BBF /* DataController_LampGraph.swift */,
+				A9AADA25296C2738003D6BBF /* DataController_Widget.swift */,
+				A9AADA27296C2749003D6BBF /* DataController_SensorMovGraph.swift */,
+				A9AADA2B296C277B003D6BBF /* DataController_DiaperSensingLog.swift */,
+				A9AADA33296C282A003D6BBF /* DataController_DeviceNotiReady.swift */,
+			);
+			path = DataController;
+			sourceTree = "<group>";
+		};
+		A9AADA10296C2449003D6BBF /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A9AADA11296C246A003D6BBF /* DataController_UserInfo.swift */,
+				A9AADA13296C2522003D6BBF /* DataController_ShareMember.swift */,
+				A9AADA15296C2541003D6BBF /* DataController_ShareDevice.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		A9AADA2D296C27CA003D6BBF /* NewAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				A9AADA30296C27FC003D6BBF /* Device */,
+				A9AADA2E296C27D5003D6BBF /* DataController_NewAlarm.swift */,
+			);
+			path = NewAlarm;
+			sourceTree = "<group>";
+		};
+		A9AADA30296C27FC003D6BBF /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				A9AADA31296C280F003D6BBF /* DataContoller_Device.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
 		A9B9589D28D0375400FFDC08 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +264,7 @@
 		A9B958A828D0375400FFDC08 /* MECS */ = {
 			isa = PBXGroup;
 			children = (
+				A9AAD9FF296C21EC003D6BBF /* Scripts */,
 				A9B958AB28D0375400FFDC08 /* SceneDelegate.swift */,
 				A9B958A928D0375400FFDC08 /* AppDelegate.swift */,
 				A9CD69ED28D86D3B002DD5F9 /* Model */,
@@ -130,6 +302,7 @@
 		A9CD69EE28D86D4E002DD5F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A9AAD9FC296C2048003D6BBF /* TableView */,
 				A9CD69F028D86DA6002DD5F9 /* TableCell */,
 			);
 			path = View;
@@ -138,15 +311,10 @@
 		A9CD69EF28D86D56002DD5F9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A9AAD9F8296C098E003D6BBF /* Device */,
 				A9B958AD28D0375400FFDC08 /* ViewController.swift */,
 				A9CD69F928D9C17B002DD5F9 /* MainHomeViewController.swift */,
-				A9A2D4E828DC547100511F68 /* WifiSelectViewController.swift */,
 				A9A2D51C28DD8B8000511F68 /* MainHomeSideViewController.swift */,
-				A9A0D1BC28E4387400230653 /* DeviceViewController_1.swift */,
-				A9A0D1BE28E4391100230653 /* DeviceViewController_2.swift */,
-				A9A0D1C028E43A5600230653 /* DeviceViewController_3.swift */,
-				A9C2A69E28FCF3E7000EB06D /* DeviceViewController_4.swift */,
-				A9C2A6A028FCF49B000EB06D /* DeviceViewController_6.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -236,23 +404,47 @@
 			files = (
 				A9B958AE28D0375400FFDC08 /* ViewController.swift in Sources */,
 				A9CD69F828D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift in Sources */,
+				A9AADA22296C2702003D6BBF /* DataController_HubGraph.swift in Sources */,
+				A9AADA2C296C277B003D6BBF /* DataController_DiaperSensingLog.swift in Sources */,
+				A9AADA1E296C26CF003D6BBF /* DataController_DeviceStatus.swift in Sources */,
+				A9AADA20296C26EC003D6BBF /* DataController_ShareMemberNoti.swift in Sources */,
+				A9AADA28296C2749003D6BBF /* DataController_SensorMovGraph.swift in Sources */,
+				A9AADA2F296C27D5003D6BBF /* DataController_NewAlarm.swift in Sources */,
 				A9CD69F628D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift in Sources */,
 				A9A2D4E928DC547100511F68 /* WifiSelectViewController.swift in Sources */,
 				A9B958B428D0375400FFDC08 /* MECS.xcdatamodeld in Sources */,
 				A9A0D1C128E43A5600230653 /* DeviceViewController_3.swift in Sources */,
+				A9AADA14296C2522003D6BBF /* DataController_ShareMember.swift in Sources */,
+				A9AADA24296C2722003D6BBF /* DataController_LampGraph.swift in Sources */,
 				A9662A0F28DB0C5400E0666E /* Sensor.swift in Sources */,
 				A9662A1128DB0C5F00E0666E /* Hub.swift in Sources */,
+				A9AADA1C296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift in Sources */,
 				A9A0D1BF28E4391100230653 /* DeviceViewController_2.swift in Sources */,
+				A9AADA32296C280F003D6BBF /* DataContoller_Device.swift in Sources */,
 				A9CD69FA28D9C17B002DD5F9 /* MainHomeViewController.swift in Sources */,
 				A9CD69F228D86E15002DD5F9 /* WifiTableViewCell.swift in Sources */,
+				A9AADA2A296C275E003D6BBF /* DataController_SensorVocGraph.swift in Sources */,
+				A9AADA34296C282A003D6BBF /* DataController_DeviceNotiReady.swift in Sources */,
+				A9AADA0F296C2411003D6BBF /* DataController.swift in Sources */,
 				A9B958AA28D0375400FFDC08 /* AppDelegate.swift in Sources */,
 				A9A2D51D28DD8B8000511F68 /* MainHomeSideViewController.swift in Sources */,
+				A9AADA0A296C22F6003D6BBF /* Debug.swift in Sources */,
 				A9C2A69F28FCF3E7000EB06D /* DeviceViewController_4.swift in Sources */,
+				A9AADA18296C2619003D6BBF /* DataController_DeviceNoti.swift in Sources */,
+				A9AADA26296C2738003D6BBF /* DataController_Widget.swift in Sources */,
+				A9AADA07296C2288003D6BBF /* SensorStatusInfo.swift in Sources */,
 				A9C2A6A128FCF49B000EB06D /* DeviceViewController_6.swift in Sources */,
+				A9AADA04296C2239003D6BBF /* BleInfo.swift in Sources */,
+				A9AADA1A296C268D003D6BBF /* DataController_StoreConnectedSensor.swift in Sources */,
+				A9AAD9FE296C205D003D6BBF /* WifiSelectView.swift in Sources */,
 				A9B958AC28D0375400FFDC08 /* SceneDelegate.swift in Sources */,
 				A9A2D4EB28DC554700511F68 /* Wifi.swift in Sources */,
+				A9AADA16296C2541003D6BBF /* DataController_ShareDevice.swift in Sources */,
+				A9AADA0C296C23D1003D6BBF /* DataManager.swift in Sources */,
+				A9AAD9FB296C1FE4003D6BBF /* Config.swift in Sources */,
 				A9A0D1BD28E4387400230653 /* DeviceViewController_1.swift in Sources */,
 				A9662A1328DB10C500E0666E /* MainHomeTableCellSensor.swift in Sources */,
+				A9AADA12296C246A003D6BBF /* DataController_UserInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
