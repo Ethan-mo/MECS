@@ -30,6 +30,16 @@ class WifiSelectViewController: UIViewController {
     var registerType: HUB_TYPES_REGISTER_TYPE = .new
     var m_peripheral: CBPeripheral?
     
+    var isSensorDisconnect: Bool {
+        get {
+            guard let info = DataManager.instance.m_userInfo.connectSensor.getSensorByDeviceId(deviceId: m_detailInfo!.m_sensorDid) else { return true }
+            if (!_info.isHubConnect) {
+                return true
+            }
+            return false
+        }
+    }
+    
     @IBOutlet weak var wifiSelectTableView: UITableView!
     
     // MARK: - LifeCycle
@@ -58,6 +68,7 @@ class WifiSelectViewController: UIViewController {
     }
 }
 
+
 extension WifiSelectViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return wifiArray.count
@@ -65,12 +76,7 @@ extension WifiSelectViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WifiCell", for: indexPath) as! WifiTableViewCell
         cell.wifiNameLabel.text = wifiArray[indexPath.row].wifiName
-        if wifiArray[indexPath.row].wifiLock == true {
-            cell.lockImageView?.isHidden = true
-        }else{
-            cell.lockImageView?.isHidden = false
-        }
-        
+        cell.lockImageView?.isHidden = wifiArray[indexPath.row].wifiLock ? true : false
         cell.wifiImageView
         return UITableViewCell()
     }

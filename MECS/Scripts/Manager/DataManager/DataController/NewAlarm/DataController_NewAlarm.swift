@@ -1,8 +1,9 @@
 //
-//  DataController_NewAlarm.swift
-//  MECS
+//  DataController_newAlarm.swift
+//  Monit
 //
-//  Created by 모상현 on 2023/01/09.
+//  Created by 맥 on 2017. 9. 27..
+//  Copyright © 2017년 맥. All rights reserved.
 //
 
 import Foundation
@@ -169,3 +170,5 @@ class DataController_NewAlarm {
         DataManager.instance.m_coreDataInfo.storeNewAlarm.deleteItemsById(id: id)
     }
 }
+
+

@@ -7,39 +7,138 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9662A0F28DB0C5400E0666E /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9662A0E28DB0C5400E0666E /* Sensor.swift */; };
-		A9662A1128DB0C5F00E0666E /* Hub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9662A1028DB0C5F00E0666E /* Hub.swift */; };
-		A9662A1328DB10C500E0666E /* MainHomeTableCellSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9662A1228DB10C500E0666E /* MainHomeTableCellSensor.swift */; };
+		A946FA44296E6F3700E2E4A8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA43296E6F3700E2E4A8 /* UserInfo.swift */; };
+		A946FA46296E6F9B00E2E4A8 /* UserInfo_ConnectSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA45296E6F9B00E2E4A8 /* UserInfo_ConnectSensor.swift */; };
+		A946FA48296E6FEC00E2E4A8 /* UserInfo_ShareMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA47296E6FEC00E2E4A8 /* UserInfo_ShareMember.swift */; };
+		A946FA55296E703500E2E4A8 /* UserInfo_ConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA49296E703500E2E4A8 /* UserInfo_ConfigData.swift */; };
+		A946FA56296E703500E2E4A8 /* UserInfo_StoreConnectedSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA4A296E703500E2E4A8 /* UserInfo_StoreConnectedSensor.swift */; };
+		A946FA57296E703500E2E4A8 /* UserInfo_DeviceNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA4B296E703500E2E4A8 /* UserInfo_DeviceNoti.swift */; };
+		A946FA58296E703500E2E4A8 /* UserInfo_DeviceNotiReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA4C296E703500E2E4A8 /* UserInfo_DeviceNotiReady.swift */; };
+		A946FA59296E703500E2E4A8 /* UserInfo_HubGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA4D296E703500E2E4A8 /* UserInfo_HubGraph.swift */; };
+		A946FA5A296E703500E2E4A8 /* UserInfo_ConnectLamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA4E296E703500E2E4A8 /* UserInfo_ConnectLamp.swift */; };
+		A946FA5B296E703500E2E4A8 /* UserInfo_SensorMovGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA4F296E703500E2E4A8 /* UserInfo_SensorMovGraph.swift */; };
+		A946FA5C296E703500E2E4A8 /* UserInfo_SensorVocGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA50296E703500E2E4A8 /* UserInfo_SensorVocGraph.swift */; };
+		A946FA5D296E703500E2E4A8 /* UserInfo_ShareMemberNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA51296E703500E2E4A8 /* UserInfo_ShareMemberNoti.swift */; };
+		A946FA5E296E703500E2E4A8 /* UserInfo_StoreConnectedLamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA52296E703500E2E4A8 /* UserInfo_StoreConnectedLamp.swift */; };
+		A946FA5F296E703500E2E4A8 /* UserInfo_LampGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA53296E703500E2E4A8 /* UserInfo_LampGraph.swift */; };
+		A946FA60296E703500E2E4A8 /* UserInfo_NewAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA54296E703500E2E4A8 /* UserInfo_NewAlarm.swift */; };
+		A946FA62296E706500E2E4A8 /* UserInfo_ShareDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA61296E706500E2E4A8 /* UserInfo_ShareDevice.swift */; };
+		A946FA6D296E70E400E2E4A8 /* UserInfo_HubStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA68296E70E400E2E4A8 /* UserInfo_HubStatus.swift */; };
+		A946FA6E296E70E400E2E4A8 /* UserInfo_DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA69296E70E400E2E4A8 /* UserInfo_DeviceStatus.swift */; };
+		A946FA6F296E70E400E2E4A8 /* UserInfo_SensorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA6A296E70E400E2E4A8 /* UserInfo_SensorStatus.swift */; };
+		A946FA70296E70E400E2E4A8 /* UserInfo_HubTypesStatusBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA6B296E70E400E2E4A8 /* UserInfo_HubTypesStatusBase.swift */; };
+		A946FA71296E70E400E2E4A8 /* UserInfo_LampStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA6C296E70E400E2E4A8 /* UserInfo_LampStatus.swift */; };
+		A946FA73296E710B00E2E4A8 /* ConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA72296E710B00E2E4A8 /* ConfigData.swift */; };
+		A946FA7F296E715900E2E4A8 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA74296E715800E2E4A8 /* PopupManager.swift */; };
+		A946FA80296E715900E2E4A8 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA75296E715800E2E4A8 /* TimerManager.swift */; };
+		A946FA81296E715900E2E4A8 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA76296E715800E2E4A8 /* SoundManager.swift */; };
+		A946FA82296E715900E2E4A8 /* LocalizedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA77296E715800E2E4A8 /* LocalizedManager.swift */; };
+		A946FA83296E715900E2E4A8 /* NativePopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA78296E715800E2E4A8 /* NativePopupManager.swift */; };
+		A946FA84296E715900E2E4A8 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA79296E715800E2E4A8 /* DownloadManager.swift */; };
+		A946FA85296E715900E2E4A8 /* ScreenAnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA7A296E715800E2E4A8 /* ScreenAnalyticsManager.swift */; };
+		A946FA86296E715900E2E4A8 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA7B296E715900E2E4A8 /* NotificationManager.swift */; };
+		A946FA87296E715900E2E4A8 /* SystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA7C296E715900E2E4A8 /* SystemManager.swift */; };
+		A946FA88296E715900E2E4A8 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA7D296E715900E2E4A8 /* UIManager.swift */; };
+		A946FA89296E715900E2E4A8 /* ReportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA7E296E715900E2E4A8 /* ReportManager.swift */; };
+		A946FA97296E71C100E2E4A8 /* CoreDataInfo_StoreDeviceNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA8B296E71C000E2E4A8 /* CoreDataInfo_StoreDeviceNoti.swift */; };
+		A946FA98296E71C100E2E4A8 /* CoreDataInfo_StoreLampGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA8C296E71C000E2E4A8 /* CoreDataInfo_StoreLampGraph.swift */; };
+		A946FA99296E71C100E2E4A8 /* CoreDataInfo_StoreSensorMovGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA8D296E71C000E2E4A8 /* CoreDataInfo_StoreSensorMovGraph.swift */; };
+		A946FA9A296E71C100E2E4A8 /* CoreDataInfo_StoreConnectedSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA8E296E71C000E2E4A8 /* CoreDataInfo_StoreConnectedSensor.swift */; };
+		A946FA9B296E71C100E2E4A8 /* CoreDataInfo_StoreShareMemberNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA8F296E71C100E2E4A8 /* CoreDataInfo_StoreShareMemberNoti.swift */; };
+		A946FA9C296E71C100E2E4A8 /* CoreDataInfo_StoreNewAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA90296E71C100E2E4A8 /* CoreDataInfo_StoreNewAlarm.swift */; };
+		A946FA9D296E71C100E2E4A8 /* CoreDataInfo_StoreDiaperSensingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA91296E71C100E2E4A8 /* CoreDataInfo_StoreDiaperSensingLog.swift */; };
+		A946FA9E296E71C100E2E4A8 /* CoreDataInfo_StoreSensorVocGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA92296E71C100E2E4A8 /* CoreDataInfo_StoreSensorVocGraph.swift */; };
+		A946FA9F296E71C100E2E4A8 /* CoreDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA93296E71C100E2E4A8 /* CoreDataInfo.swift */; };
+		A946FAA0296E71C100E2E4A8 /* CoreDataInfo_StoreDeviceNotiReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA94296E71C100E2E4A8 /* CoreDataInfo_StoreDeviceNotiReady.swift */; };
+		A946FAA1296E71C100E2E4A8 /* CoreDataInfo_StoreConnectedLamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA95296E71C100E2E4A8 /* CoreDataInfo_StoreConnectedLamp.swift */; };
+		A946FAA2296E71C100E2E4A8 /* CoreDataInfo_StoreHubGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FA96296E71C100E2E4A8 /* CoreDataInfo_StoreHubGraph.swift */; };
+		A946FAA7296E71EB00E2E4A8 /* DataController_Lamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAA3296E71EA00E2E4A8 /* DataController_Lamp.swift */; };
+		A946FAA8296E71EB00E2E4A8 /* DataController_HubTypesBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAA4296E71EA00E2E4A8 /* DataController_HubTypesBase.swift */; };
+		A946FAA9296E71EB00E2E4A8 /* DataController_Hub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAA5296E71EB00E2E4A8 /* DataController_Hub.swift */; };
+		A946FAAA296E71EB00E2E4A8 /* DataController_Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAA6296E71EB00E2E4A8 /* DataController_Sensor.swift */; };
+		A946FAB0296E723400E2E4A8 /* DataController_NewAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAAB296E723300E2E4A8 /* DataController_NewAlarm.swift */; };
+		A946FAB1296E723400E2E4A8 /* DataController_NewAlarm_SensorFirmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAAC296E723300E2E4A8 /* DataController_NewAlarm_SensorFirmware.swift */; };
+		A946FAB2296E723400E2E4A8 /* DataController_NewAlarm_Noti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAAD296E723300E2E4A8 /* DataController_NewAlarm_Noti.swift */; };
+		A946FAB3296E723400E2E4A8 /* DataController_NewAlarm_LampFirmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAAE296E723300E2E4A8 /* DataController_NewAlarm_LampFirmware.swift */; };
+		A946FAB4296E723400E2E4A8 /* DataController_NewAlarm_HubFirmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAAF296E723300E2E4A8 /* DataController_NewAlarm_HubFirmware.swift */; };
+		A946FAC2296E728B00E2E4A8 /* DataController_SensorVocGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAB5296E728A00E2E4A8 /* DataController_SensorVocGraph.swift */; };
+		A946FAC3296E728B00E2E4A8 /* DataController_ShareMemberNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAB6296E728A00E2E4A8 /* DataController_ShareMemberNoti.swift */; };
+		A946FAC4296E728B00E2E4A8 /* DataController_SensorMovGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAB7296E728A00E2E4A8 /* DataController_SensorMovGraph.swift */; };
+		A946FAC5296E728B00E2E4A8 /* DataController_HubGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAB8296E728A00E2E4A8 /* DataController_HubGraph.swift */; };
+		A946FAC6296E728B00E2E4A8 /* DataController_StoreConnectedLamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAB9296E728A00E2E4A8 /* DataController_StoreConnectedLamp.swift */; };
+		A946FAC7296E728B00E2E4A8 /* DataController_DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FABA296E728B00E2E4A8 /* DataController_DeviceStatus.swift */; };
+		A946FAC8296E728B00E2E4A8 /* DataController_DiaperSensingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FABB296E728B00E2E4A8 /* DataController_DiaperSensingLog.swift */; };
+		A946FAC9296E728B00E2E4A8 /* DataController_DeviceNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FABC296E728B00E2E4A8 /* DataController_DeviceNoti.swift */; };
+		A946FACA296E728B00E2E4A8 /* DataController_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FABD296E728B00E2E4A8 /* DataController_Widget.swift */; };
+		A946FACB296E728B00E2E4A8 /* DataController_LampGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FABE296E728B00E2E4A8 /* DataController_LampGraph.swift */; };
+		A946FACC296E728B00E2E4A8 /* DataController_DeviceNotiReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FABF296E728B00E2E4A8 /* DataController_DeviceNotiReady.swift */; };
+		A946FACD296E728B00E2E4A8 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAC0296E728B00E2E4A8 /* DataController.swift */; };
+		A946FACE296E728B00E2E4A8 /* DataController_StoreConnectedSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAC1296E728B00E2E4A8 /* DataController_StoreConnectedSensor.swift */; };
+		A946FAD8296E732C00E2E4A8 /* BlePacket_Commend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAD3296E732B00E2E4A8 /* BlePacket_Commend.swift */; };
+		A946FAD9296E732C00E2E4A8 /* BlePacket_Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAD4296E732B00E2E4A8 /* BlePacket_Utility.swift */; };
+		A946FADA296E732C00E2E4A8 /* BlePacket_SensorToLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAD5296E732C00E2E4A8 /* BlePacket_SensorToLocal.swift */; };
+		A946FADB296E732C00E2E4A8 /* BlePacket_Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAD6296E732C00E2E4A8 /* BlePacket_Request.swift */; };
+		A946FADC296E732C00E2E4A8 /* BlePacket_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAD7296E732C00E2E4A8 /* BlePacket_Controller.swift */; };
+		A946FAE0296E733500E2E4A8 /* PeripheralCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FADD296E733500E2E4A8 /* PeripheralCallback.swift */; };
+		A946FAE1296E733500E2E4A8 /* HubConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FADE296E733500E2E4A8 /* HubConnectionController.swift */; };
+		A946FAE2296E733500E2E4A8 /* Peripheral_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FADF296E733500E2E4A8 /* Peripheral_Controller.swift */; };
+		A946FAE4296E734000E2E4A8 /* BleConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAE3296E734000E2E4A8 /* BleConnectionManager.swift */; };
+		A946FAEB296E737E00E2E4A8 /* BleLampPacket_SensorToLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAE7296E737E00E2E4A8 /* BleLampPacket_SensorToLocal.swift */; };
+		A946FAEC296E737E00E2E4A8 /* BleLampPacket_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAE8296E737E00E2E4A8 /* BleLampPacket_Controller.swift */; };
+		A946FAED296E737F00E2E4A8 /* BleLampPacket_Requst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAE9296E737E00E2E4A8 /* BleLampPacket_Requst.swift */; };
+		A946FAEE296E737F00E2E4A8 /* BleLampPacket_Commend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAEA296E737E00E2E4A8 /* BleLampPacket_Commend.swift */; };
+		A946FAF2296E738900E2E4A8 /* PeripheralLamp_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAEF296E738900E2E4A8 /* PeripheralLamp_Controller.swift */; };
+		A946FAF3296E738900E2E4A8 /* PeripheralLampCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAF0296E738900E2E4A8 /* PeripheralLampCallback.swift */; };
+		A946FAF4296E738900E2E4A8 /* LampConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAF1296E738900E2E4A8 /* LampConnectionController.swift */; };
+		A946FAF6296E73A800E2E4A8 /* BleConnectionLampManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAF5296E73A800E2E4A8 /* BleConnectionLampManager.swift */; };
+		A946FAFD296E744100E2E4A8 /* SensorStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAF8296E744000E2E4A8 /* SensorStatusInfo.swift */; };
+		A946FAFE296E744100E2E4A8 /* DeviceDetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAF9296E744000E2E4A8 /* DeviceDetailInfo.swift */; };
+		A946FAFF296E744100E2E4A8 /* HubStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAFA296E744100E2E4A8 /* HubStatusInfo.swift */; };
+		A946FB00296E744100E2E4A8 /* HubTypesStatusInfoBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAFB296E744100E2E4A8 /* HubTypesStatusInfoBase.swift */; };
+		A946FB01296E744100E2E4A8 /* LampStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FAFC296E744100E2E4A8 /* LampStatusInfo.swift */; };
+		A946FB19296E74EC00E2E4A8 /* StoreLampGraph+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB03296E74EA00E2E4A8 /* StoreLampGraph+CoreDataProperties.swift */; };
+		A946FB1A296E74EC00E2E4A8 /* StoreConnectedSensor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB04296E74EA00E2E4A8 /* StoreConnectedSensor+CoreDataClass.swift */; };
+		A946FB1B296E74EC00E2E4A8 /* StoreHubGraph+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB05296E74EA00E2E4A8 /* StoreHubGraph+CoreDataProperties.swift */; };
+		A946FB1C296E74ED00E2E4A8 /* StoreSensorVocGraph+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB06296E74EA00E2E4A8 /* StoreSensorVocGraph+CoreDataClass.swift */; };
+		A946FB1D296E74ED00E2E4A8 /* StoreNewAlarm+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB07296E74EB00E2E4A8 /* StoreNewAlarm+CoreDataProperties.swift */; };
+		A946FB1E296E74ED00E2E4A8 /* StoreDeviceNotiReady+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB08296E74EB00E2E4A8 /* StoreDeviceNotiReady+CoreDataClass.swift */; };
+		A946FB1F296E74ED00E2E4A8 /* StoreShareMemberNoti+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB09296E74EB00E2E4A8 /* StoreShareMemberNoti+CoreDataProperties.swift */; };
+		A946FB20296E74ED00E2E4A8 /* StoreConnectedSensor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB0A296E74EB00E2E4A8 /* StoreConnectedSensor+CoreDataProperties.swift */; };
+		A946FB21296E74ED00E2E4A8 /* StoreHubGraph+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB0B296E74EB00E2E4A8 /* StoreHubGraph+CoreDataClass.swift */; };
+		A946FB22296E74ED00E2E4A8 /* StoreDiaperSensingLog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB0C296E74EB00E2E4A8 /* StoreDiaperSensingLog+CoreDataProperties.swift */; };
+		A946FB23296E74ED00E2E4A8 /* StoreNewAlarm+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB0D296E74EB00E2E4A8 /* StoreNewAlarm+CoreDataClass.swift */; };
+		A946FB24296E74ED00E2E4A8 /* StoreSensorMovGraph+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB0E296E74EB00E2E4A8 /* StoreSensorMovGraph+CoreDataClass.swift */; };
+		A946FB25296E74ED00E2E4A8 /* StoreShareMemberNoti+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB0F296E74EB00E2E4A8 /* StoreShareMemberNoti+CoreDataClass.swift */; };
+		A946FB26296E74ED00E2E4A8 /* StoreSensorMovGraph+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB10296E74EB00E2E4A8 /* StoreSensorMovGraph+CoreDataProperties.swift */; };
+		A946FB27296E74ED00E2E4A8 /* StoreDeviceNoti+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB11296E74EB00E2E4A8 /* StoreDeviceNoti+CoreDataProperties.swift */; };
+		A946FB28296E74ED00E2E4A8 /* StoreDiaperSensingLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB12296E74EC00E2E4A8 /* StoreDiaperSensingLog+CoreDataClass.swift */; };
+		A946FB29296E74ED00E2E4A8 /* StoreConnectedLamp+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB13296E74EC00E2E4A8 /* StoreConnectedLamp+CoreDataProperties.swift */; };
+		A946FB2A296E74ED00E2E4A8 /* StoreDeviceNoti+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB14296E74EC00E2E4A8 /* StoreDeviceNoti+CoreDataClass.swift */; };
+		A946FB2B296E74ED00E2E4A8 /* StoreDeviceNotiReady+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB15296E74EC00E2E4A8 /* StoreDeviceNotiReady+CoreDataProperties.swift */; };
+		A946FB2C296E74ED00E2E4A8 /* StoreLampGraph+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB16296E74EC00E2E4A8 /* StoreLampGraph+CoreDataClass.swift */; };
+		A946FB2D296E74ED00E2E4A8 /* StoreSensorVocGraph+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB17296E74EC00E2E4A8 /* StoreSensorVocGraph+CoreDataProperties.swift */; };
+		A946FB2E296E74ED00E2E4A8 /* StoreConnectedLamp+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB18296E74EC00E2E4A8 /* StoreConnectedLamp+CoreDataClass.swift */; };
+		A946FB30296E863C00E2E4A8 /* initViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB2F296E863C00E2E4A8 /* initViewController.swift */; };
+		A946FB34296E92BE00E2E4A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB33296E92BE00E2E4A8 /* NetworkManager.swift */; };
+		A946FB3B296E92D800E2E4A8 /* Packet_DeviceWithWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB36296E92D800E2E4A8 /* Packet_DeviceWithWidget.swift */; };
+		A946FB3C296E92D800E2E4A8 /* Packet_Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB37296E92D800E2E4A8 /* Packet_Device.swift */; };
+		A946FB3D296E92D800E2E4A8 /* Packet_Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB38296E92D800E2E4A8 /* Packet_Account.swift */; };
+		A946FB3E296E92D800E2E4A8 /* Packet_Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB39296E92D800E2E4A8 /* Packet_Cloud.swift */; };
+		A946FB3F296E92D800E2E4A8 /* Packet_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946FB3A296E92D800E2E4A8 /* Packet_Base.swift */; };
 		A9A0D1BD28E4387400230653 /* DeviceViewController_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0D1BC28E4387400230653 /* DeviceViewController_1.swift */; };
 		A9A0D1BF28E4391100230653 /* DeviceViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0D1BE28E4391100230653 /* DeviceViewController_2.swift */; };
 		A9A0D1C128E43A5600230653 /* DeviceViewController_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0D1C028E43A5600230653 /* DeviceViewController_3.swift */; };
 		A9A2D4E928DC547100511F68 /* WifiSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2D4E828DC547100511F68 /* WifiSelectViewController.swift */; };
-		A9A2D4EB28DC554700511F68 /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2D4EA28DC554700511F68 /* Wifi.swift */; };
 		A9A2D51D28DD8B8000511F68 /* MainHomeSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2D51C28DD8B8000511F68 /* MainHomeSideViewController.swift */; };
 		A9AAD9FB296C1FE4003D6BBF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AAD9FA296C1FE4003D6BBF /* Config.swift */; };
 		A9AAD9FE296C205D003D6BBF /* WifiSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AAD9FD296C205D003D6BBF /* WifiSelectView.swift */; };
-		A9AADA04296C2239003D6BBF /* BleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA03296C2239003D6BBF /* BleInfo.swift */; };
 		A9AADA07296C2288003D6BBF /* SensorStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA06296C2288003D6BBF /* SensorStatusInfo.swift */; };
 		A9AADA0A296C22F6003D6BBF /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA09296C22F6003D6BBF /* Debug.swift */; };
 		A9AADA0C296C23D1003D6BBF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA0B296C23D1003D6BBF /* DataManager.swift */; };
-		A9AADA0F296C2411003D6BBF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA0E296C2411003D6BBF /* DataController.swift */; };
 		A9AADA12296C246A003D6BBF /* DataController_UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA11296C246A003D6BBF /* DataController_UserInfo.swift */; };
 		A9AADA14296C2522003D6BBF /* DataController_ShareMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA13296C2522003D6BBF /* DataController_ShareMember.swift */; };
 		A9AADA16296C2541003D6BBF /* DataController_ShareDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA15296C2541003D6BBF /* DataController_ShareDevice.swift */; };
-		A9AADA18296C2619003D6BBF /* DataController_DeviceNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA17296C2619003D6BBF /* DataController_DeviceNoti.swift */; };
-		A9AADA1A296C268D003D6BBF /* DataController_StoreConnectedSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA19296C268D003D6BBF /* DataController_StoreConnectedSensor.swift */; };
-		A9AADA1C296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA1B296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift */; };
-		A9AADA1E296C26CF003D6BBF /* DataController_DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA1D296C26CF003D6BBF /* DataController_DeviceStatus.swift */; };
-		A9AADA20296C26EC003D6BBF /* DataController_ShareMemberNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA1F296C26EC003D6BBF /* DataController_ShareMemberNoti.swift */; };
-		A9AADA22296C2702003D6BBF /* DataController_HubGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA21296C2702003D6BBF /* DataController_HubGraph.swift */; };
-		A9AADA24296C2722003D6BBF /* DataController_LampGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA23296C2722003D6BBF /* DataController_LampGraph.swift */; };
-		A9AADA26296C2738003D6BBF /* DataController_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA25296C2738003D6BBF /* DataController_Widget.swift */; };
-		A9AADA28296C2749003D6BBF /* DataController_SensorMovGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA27296C2749003D6BBF /* DataController_SensorMovGraph.swift */; };
-		A9AADA2A296C275E003D6BBF /* DataController_SensorVocGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA29296C275E003D6BBF /* DataController_SensorVocGraph.swift */; };
-		A9AADA2C296C277B003D6BBF /* DataController_DiaperSensingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA2B296C277B003D6BBF /* DataController_DiaperSensingLog.swift */; };
-		A9AADA2F296C27D5003D6BBF /* DataController_NewAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA2E296C27D5003D6BBF /* DataController_NewAlarm.swift */; };
 		A9AADA32296C280F003D6BBF /* DataContoller_Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA31296C280F003D6BBF /* DataContoller_Device.swift */; };
-		A9AADA34296C282A003D6BBF /* DataController_DeviceNotiReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AADA33296C282A003D6BBF /* DataController_DeviceNotiReady.swift */; };
 		A9B958AA28D0375400FFDC08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B958A928D0375400FFDC08 /* AppDelegate.swift */; };
 		A9B958AC28D0375400FFDC08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B958AB28D0375400FFDC08 /* SceneDelegate.swift */; };
 		A9B958AE28D0375400FFDC08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B958AD28D0375400FFDC08 /* ViewController.swift */; };
@@ -55,42 +154,144 @@
 		A9CD69F628D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD69F528D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift */; };
 		A9CD69F828D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD69F728D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift */; };
 		A9CD69FA28D9C17B002DD5F9 /* MainHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD69F928D9C17B002DD5F9 /* MainHomeViewController.swift */; };
+		DF22ED5080EEA731AA4234FD /* Pods_MECS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87CA3D6CB26AF807103579E /* Pods_MECS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A9662A0E28DB0C5400E0666E /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
-		A9662A1028DB0C5F00E0666E /* Hub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hub.swift; sourceTree = "<group>"; };
-		A9662A1228DB10C500E0666E /* MainHomeTableCellSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeTableCellSensor.swift; sourceTree = "<group>"; };
+		25E37A4EF7EB9BE3BBF008E1 /* Pods-MECS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MECS.debug.xcconfig"; path = "Target Support Files/Pods-MECS/Pods-MECS.debug.xcconfig"; sourceTree = "<group>"; };
+		410DF41D33204E80B8D60667 /* Pods-MECS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MECS.release.xcconfig"; path = "Target Support Files/Pods-MECS/Pods-MECS.release.xcconfig"; sourceTree = "<group>"; };
+		A946FA43296E6F3700E2E4A8 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A946FA45296E6F9B00E2E4A8 /* UserInfo_ConnectSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo_ConnectSensor.swift; sourceTree = "<group>"; };
+		A946FA47296E6FEC00E2E4A8 /* UserInfo_ShareMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo_ShareMember.swift; sourceTree = "<group>"; };
+		A946FA49296E703500E2E4A8 /* UserInfo_ConfigData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_ConfigData.swift; sourceTree = "<group>"; };
+		A946FA4A296E703500E2E4A8 /* UserInfo_StoreConnectedSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_StoreConnectedSensor.swift; sourceTree = "<group>"; };
+		A946FA4B296E703500E2E4A8 /* UserInfo_DeviceNoti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_DeviceNoti.swift; sourceTree = "<group>"; };
+		A946FA4C296E703500E2E4A8 /* UserInfo_DeviceNotiReady.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_DeviceNotiReady.swift; sourceTree = "<group>"; };
+		A946FA4D296E703500E2E4A8 /* UserInfo_HubGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_HubGraph.swift; sourceTree = "<group>"; };
+		A946FA4E296E703500E2E4A8 /* UserInfo_ConnectLamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_ConnectLamp.swift; sourceTree = "<group>"; };
+		A946FA4F296E703500E2E4A8 /* UserInfo_SensorMovGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_SensorMovGraph.swift; sourceTree = "<group>"; };
+		A946FA50296E703500E2E4A8 /* UserInfo_SensorVocGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_SensorVocGraph.swift; sourceTree = "<group>"; };
+		A946FA51296E703500E2E4A8 /* UserInfo_ShareMemberNoti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_ShareMemberNoti.swift; sourceTree = "<group>"; };
+		A946FA52296E703500E2E4A8 /* UserInfo_StoreConnectedLamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_StoreConnectedLamp.swift; sourceTree = "<group>"; };
+		A946FA53296E703500E2E4A8 /* UserInfo_LampGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_LampGraph.swift; sourceTree = "<group>"; };
+		A946FA54296E703500E2E4A8 /* UserInfo_NewAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_NewAlarm.swift; sourceTree = "<group>"; };
+		A946FA61296E706500E2E4A8 /* UserInfo_ShareDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_ShareDevice.swift; sourceTree = "<group>"; };
+		A946FA68296E70E400E2E4A8 /* UserInfo_HubStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_HubStatus.swift; sourceTree = "<group>"; };
+		A946FA69296E70E400E2E4A8 /* UserInfo_DeviceStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_DeviceStatus.swift; sourceTree = "<group>"; };
+		A946FA6A296E70E400E2E4A8 /* UserInfo_SensorStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_SensorStatus.swift; sourceTree = "<group>"; };
+		A946FA6B296E70E400E2E4A8 /* UserInfo_HubTypesStatusBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_HubTypesStatusBase.swift; sourceTree = "<group>"; };
+		A946FA6C296E70E400E2E4A8 /* UserInfo_LampStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo_LampStatus.swift; sourceTree = "<group>"; };
+		A946FA72296E710B00E2E4A8 /* ConfigData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigData.swift; sourceTree = "<group>"; };
+		A946FA74296E715800E2E4A8 /* PopupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
+		A946FA75296E715800E2E4A8 /* TimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		A946FA76296E715800E2E4A8 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		A946FA77296E715800E2E4A8 /* LocalizedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedManager.swift; sourceTree = "<group>"; };
+		A946FA78296E715800E2E4A8 /* NativePopupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativePopupManager.swift; sourceTree = "<group>"; };
+		A946FA79296E715800E2E4A8 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		A946FA7A296E715800E2E4A8 /* ScreenAnalyticsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenAnalyticsManager.swift; sourceTree = "<group>"; };
+		A946FA7B296E715900E2E4A8 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A946FA7C296E715900E2E4A8 /* SystemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemManager.swift; sourceTree = "<group>"; };
+		A946FA7D296E715900E2E4A8 /* UIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
+		A946FA7E296E715900E2E4A8 /* ReportManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportManager.swift; sourceTree = "<group>"; };
+		A946FA8B296E71C000E2E4A8 /* CoreDataInfo_StoreDeviceNoti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreDeviceNoti.swift; sourceTree = "<group>"; };
+		A946FA8C296E71C000E2E4A8 /* CoreDataInfo_StoreLampGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreLampGraph.swift; sourceTree = "<group>"; };
+		A946FA8D296E71C000E2E4A8 /* CoreDataInfo_StoreSensorMovGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreSensorMovGraph.swift; sourceTree = "<group>"; };
+		A946FA8E296E71C000E2E4A8 /* CoreDataInfo_StoreConnectedSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreConnectedSensor.swift; sourceTree = "<group>"; };
+		A946FA8F296E71C100E2E4A8 /* CoreDataInfo_StoreShareMemberNoti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreShareMemberNoti.swift; sourceTree = "<group>"; };
+		A946FA90296E71C100E2E4A8 /* CoreDataInfo_StoreNewAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreNewAlarm.swift; sourceTree = "<group>"; };
+		A946FA91296E71C100E2E4A8 /* CoreDataInfo_StoreDiaperSensingLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreDiaperSensingLog.swift; sourceTree = "<group>"; };
+		A946FA92296E71C100E2E4A8 /* CoreDataInfo_StoreSensorVocGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreSensorVocGraph.swift; sourceTree = "<group>"; };
+		A946FA93296E71C100E2E4A8 /* CoreDataInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo.swift; sourceTree = "<group>"; };
+		A946FA94296E71C100E2E4A8 /* CoreDataInfo_StoreDeviceNotiReady.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreDeviceNotiReady.swift; sourceTree = "<group>"; };
+		A946FA95296E71C100E2E4A8 /* CoreDataInfo_StoreConnectedLamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreConnectedLamp.swift; sourceTree = "<group>"; };
+		A946FA96296E71C100E2E4A8 /* CoreDataInfo_StoreHubGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataInfo_StoreHubGraph.swift; sourceTree = "<group>"; };
+		A946FAA3296E71EA00E2E4A8 /* DataController_Lamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_Lamp.swift; sourceTree = "<group>"; };
+		A946FAA4296E71EA00E2E4A8 /* DataController_HubTypesBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_HubTypesBase.swift; sourceTree = "<group>"; };
+		A946FAA5296E71EB00E2E4A8 /* DataController_Hub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_Hub.swift; sourceTree = "<group>"; };
+		A946FAA6296E71EB00E2E4A8 /* DataController_Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_Sensor.swift; sourceTree = "<group>"; };
+		A946FAAB296E723300E2E4A8 /* DataController_NewAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_NewAlarm.swift; sourceTree = "<group>"; };
+		A946FAAC296E723300E2E4A8 /* DataController_NewAlarm_SensorFirmware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_NewAlarm_SensorFirmware.swift; sourceTree = "<group>"; };
+		A946FAAD296E723300E2E4A8 /* DataController_NewAlarm_Noti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_NewAlarm_Noti.swift; sourceTree = "<group>"; };
+		A946FAAE296E723300E2E4A8 /* DataController_NewAlarm_LampFirmware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_NewAlarm_LampFirmware.swift; sourceTree = "<group>"; };
+		A946FAAF296E723300E2E4A8 /* DataController_NewAlarm_HubFirmware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_NewAlarm_HubFirmware.swift; sourceTree = "<group>"; };
+		A946FAB5296E728A00E2E4A8 /* DataController_SensorVocGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_SensorVocGraph.swift; sourceTree = "<group>"; };
+		A946FAB6296E728A00E2E4A8 /* DataController_ShareMemberNoti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_ShareMemberNoti.swift; sourceTree = "<group>"; };
+		A946FAB7296E728A00E2E4A8 /* DataController_SensorMovGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_SensorMovGraph.swift; sourceTree = "<group>"; };
+		A946FAB8296E728A00E2E4A8 /* DataController_HubGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_HubGraph.swift; sourceTree = "<group>"; };
+		A946FAB9296E728A00E2E4A8 /* DataController_StoreConnectedLamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_StoreConnectedLamp.swift; sourceTree = "<group>"; };
+		A946FABA296E728B00E2E4A8 /* DataController_DeviceStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_DeviceStatus.swift; sourceTree = "<group>"; };
+		A946FABB296E728B00E2E4A8 /* DataController_DiaperSensingLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_DiaperSensingLog.swift; sourceTree = "<group>"; };
+		A946FABC296E728B00E2E4A8 /* DataController_DeviceNoti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_DeviceNoti.swift; sourceTree = "<group>"; };
+		A946FABD296E728B00E2E4A8 /* DataController_Widget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_Widget.swift; sourceTree = "<group>"; };
+		A946FABE296E728B00E2E4A8 /* DataController_LampGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_LampGraph.swift; sourceTree = "<group>"; };
+		A946FABF296E728B00E2E4A8 /* DataController_DeviceNotiReady.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_DeviceNotiReady.swift; sourceTree = "<group>"; };
+		A946FAC0296E728B00E2E4A8 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		A946FAC1296E728B00E2E4A8 /* DataController_StoreConnectedSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController_StoreConnectedSensor.swift; sourceTree = "<group>"; };
+		A946FAD3296E732B00E2E4A8 /* BlePacket_Commend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlePacket_Commend.swift; sourceTree = "<group>"; };
+		A946FAD4296E732B00E2E4A8 /* BlePacket_Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlePacket_Utility.swift; sourceTree = "<group>"; };
+		A946FAD5296E732C00E2E4A8 /* BlePacket_SensorToLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlePacket_SensorToLocal.swift; sourceTree = "<group>"; };
+		A946FAD6296E732C00E2E4A8 /* BlePacket_Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlePacket_Request.swift; sourceTree = "<group>"; };
+		A946FAD7296E732C00E2E4A8 /* BlePacket_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlePacket_Controller.swift; sourceTree = "<group>"; };
+		A946FADD296E733500E2E4A8 /* PeripheralCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralCallback.swift; sourceTree = "<group>"; };
+		A946FADE296E733500E2E4A8 /* HubConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubConnectionController.swift; sourceTree = "<group>"; };
+		A946FADF296E733500E2E4A8 /* Peripheral_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peripheral_Controller.swift; sourceTree = "<group>"; };
+		A946FAE3296E734000E2E4A8 /* BleConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleConnectionManager.swift; sourceTree = "<group>"; };
+		A946FAE7296E737E00E2E4A8 /* BleLampPacket_SensorToLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleLampPacket_SensorToLocal.swift; sourceTree = "<group>"; };
+		A946FAE8296E737E00E2E4A8 /* BleLampPacket_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleLampPacket_Controller.swift; sourceTree = "<group>"; };
+		A946FAE9296E737E00E2E4A8 /* BleLampPacket_Requst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleLampPacket_Requst.swift; sourceTree = "<group>"; };
+		A946FAEA296E737E00E2E4A8 /* BleLampPacket_Commend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleLampPacket_Commend.swift; sourceTree = "<group>"; };
+		A946FAEF296E738900E2E4A8 /* PeripheralLamp_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralLamp_Controller.swift; sourceTree = "<group>"; };
+		A946FAF0296E738900E2E4A8 /* PeripheralLampCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralLampCallback.swift; sourceTree = "<group>"; };
+		A946FAF1296E738900E2E4A8 /* LampConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LampConnectionController.swift; sourceTree = "<group>"; };
+		A946FAF5296E73A800E2E4A8 /* BleConnectionLampManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleConnectionLampManager.swift; sourceTree = "<group>"; };
+		A946FAF8296E744000E2E4A8 /* SensorStatusInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorStatusInfo.swift; sourceTree = "<group>"; };
+		A946FAF9296E744000E2E4A8 /* DeviceDetailInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetailInfo.swift; sourceTree = "<group>"; };
+		A946FAFA296E744100E2E4A8 /* HubStatusInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubStatusInfo.swift; sourceTree = "<group>"; };
+		A946FAFB296E744100E2E4A8 /* HubTypesStatusInfoBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubTypesStatusInfoBase.swift; sourceTree = "<group>"; };
+		A946FAFC296E744100E2E4A8 /* LampStatusInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LampStatusInfo.swift; sourceTree = "<group>"; };
+		A946FB03296E74EA00E2E4A8 /* StoreLampGraph+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreLampGraph+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB04296E74EA00E2E4A8 /* StoreConnectedSensor+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreConnectedSensor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB05296E74EA00E2E4A8 /* StoreHubGraph+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreHubGraph+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB06296E74EA00E2E4A8 /* StoreSensorVocGraph+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreSensorVocGraph+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB07296E74EB00E2E4A8 /* StoreNewAlarm+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreNewAlarm+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB08296E74EB00E2E4A8 /* StoreDeviceNotiReady+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreDeviceNotiReady+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB09296E74EB00E2E4A8 /* StoreShareMemberNoti+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreShareMemberNoti+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB0A296E74EB00E2E4A8 /* StoreConnectedSensor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreConnectedSensor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB0B296E74EB00E2E4A8 /* StoreHubGraph+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreHubGraph+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB0C296E74EB00E2E4A8 /* StoreDiaperSensingLog+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreDiaperSensingLog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB0D296E74EB00E2E4A8 /* StoreNewAlarm+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreNewAlarm+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB0E296E74EB00E2E4A8 /* StoreSensorMovGraph+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreSensorMovGraph+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB0F296E74EB00E2E4A8 /* StoreShareMemberNoti+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreShareMemberNoti+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB10296E74EB00E2E4A8 /* StoreSensorMovGraph+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreSensorMovGraph+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB11296E74EB00E2E4A8 /* StoreDeviceNoti+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreDeviceNoti+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB12296E74EC00E2E4A8 /* StoreDiaperSensingLog+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreDiaperSensingLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB13296E74EC00E2E4A8 /* StoreConnectedLamp+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreConnectedLamp+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB14296E74EC00E2E4A8 /* StoreDeviceNoti+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreDeviceNoti+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB15296E74EC00E2E4A8 /* StoreDeviceNotiReady+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreDeviceNotiReady+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB16296E74EC00E2E4A8 /* StoreLampGraph+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreLampGraph+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB17296E74EC00E2E4A8 /* StoreSensorVocGraph+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreSensorVocGraph+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A946FB18296E74EC00E2E4A8 /* StoreConnectedLamp+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreConnectedLamp+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A946FB2F296E863C00E2E4A8 /* initViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initViewController.swift; sourceTree = "<group>"; };
+		A946FB33296E92BE00E2E4A8 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A946FB36296E92D800E2E4A8 /* Packet_DeviceWithWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet_DeviceWithWidget.swift; sourceTree = "<group>"; };
+		A946FB37296E92D800E2E4A8 /* Packet_Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet_Device.swift; sourceTree = "<group>"; };
+		A946FB38296E92D800E2E4A8 /* Packet_Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet_Account.swift; sourceTree = "<group>"; };
+		A946FB39296E92D800E2E4A8 /* Packet_Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet_Cloud.swift; sourceTree = "<group>"; };
+		A946FB3A296E92D800E2E4A8 /* Packet_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet_Base.swift; sourceTree = "<group>"; };
 		A9A0D1BC28E4387400230653 /* DeviceViewController_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController_1.swift; sourceTree = "<group>"; };
 		A9A0D1BE28E4391100230653 /* DeviceViewController_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController_2.swift; sourceTree = "<group>"; };
 		A9A0D1C028E43A5600230653 /* DeviceViewController_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController_3.swift; sourceTree = "<group>"; };
 		A9A2D4E828DC547100511F68 /* WifiSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiSelectViewController.swift; sourceTree = "<group>"; };
-		A9A2D4EA28DC554700511F68 /* Wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
 		A9A2D51C28DD8B8000511F68 /* MainHomeSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeSideViewController.swift; sourceTree = "<group>"; };
 		A9AAD9FA296C1FE4003D6BBF /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		A9AAD9FD296C205D003D6BBF /* WifiSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiSelectView.swift; sourceTree = "<group>"; };
-		A9AADA03296C2239003D6BBF /* BleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleInfo.swift; sourceTree = "<group>"; };
 		A9AADA06296C2288003D6BBF /* SensorStatusInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorStatusInfo.swift; sourceTree = "<group>"; };
 		A9AADA09296C22F6003D6BBF /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		A9AADA0B296C23D1003D6BBF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		A9AADA0E296C2411003D6BBF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		A9AADA11296C246A003D6BBF /* DataController_UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_UserInfo.swift; sourceTree = "<group>"; };
 		A9AADA13296C2522003D6BBF /* DataController_ShareMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_ShareMember.swift; sourceTree = "<group>"; };
 		A9AADA15296C2541003D6BBF /* DataController_ShareDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_ShareDevice.swift; sourceTree = "<group>"; };
-		A9AADA17296C2619003D6BBF /* DataController_DeviceNoti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_DeviceNoti.swift; sourceTree = "<group>"; };
-		A9AADA19296C268D003D6BBF /* DataController_StoreConnectedSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_StoreConnectedSensor.swift; sourceTree = "<group>"; };
-		A9AADA1B296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_StoreConnectedLamp.swift; sourceTree = "<group>"; };
-		A9AADA1D296C26CF003D6BBF /* DataController_DeviceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_DeviceStatus.swift; sourceTree = "<group>"; };
-		A9AADA1F296C26EC003D6BBF /* DataController_ShareMemberNoti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_ShareMemberNoti.swift; sourceTree = "<group>"; };
-		A9AADA21296C2702003D6BBF /* DataController_HubGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_HubGraph.swift; sourceTree = "<group>"; };
-		A9AADA23296C2722003D6BBF /* DataController_LampGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_LampGraph.swift; sourceTree = "<group>"; };
-		A9AADA25296C2738003D6BBF /* DataController_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_Widget.swift; sourceTree = "<group>"; };
-		A9AADA27296C2749003D6BBF /* DataController_SensorMovGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_SensorMovGraph.swift; sourceTree = "<group>"; };
-		A9AADA29296C275E003D6BBF /* DataController_SensorVocGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_SensorVocGraph.swift; sourceTree = "<group>"; };
-		A9AADA2B296C277B003D6BBF /* DataController_DiaperSensingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_DiaperSensingLog.swift; sourceTree = "<group>"; };
-		A9AADA2E296C27D5003D6BBF /* DataController_NewAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_NewAlarm.swift; sourceTree = "<group>"; };
 		A9AADA31296C280F003D6BBF /* DataContoller_Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContoller_Device.swift; sourceTree = "<group>"; };
-		A9AADA33296C282A003D6BBF /* DataController_DeviceNotiReady.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController_DeviceNotiReady.swift; sourceTree = "<group>"; };
 		A9B958A628D0375400FFDC08 /* MECS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MECS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B958A928D0375400FFDC08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9B958AB28D0375400FFDC08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +309,7 @@
 		A9CD69F528D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeSensorTableViewCell.swift; sourceTree = "<group>"; };
 		A9CD69F728D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeHubTableViewCell.swift; sourceTree = "<group>"; };
 		A9CD69F928D9C17B002DD5F9 /* MainHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeViewController.swift; sourceTree = "<group>"; };
+		D87CA3D6CB26AF807103579E /* Pods_MECS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MECS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +317,177 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF22ED5080EEA731AA4234FD /* Pods_MECS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A946FA67296E70D100E2E4A8 /* DeviceStatus */ = {
+			isa = PBXGroup;
+			children = (
+				A946FA69296E70E400E2E4A8 /* UserInfo_DeviceStatus.swift */,
+				A946FA68296E70E400E2E4A8 /* UserInfo_HubStatus.swift */,
+				A946FA6B296E70E400E2E4A8 /* UserInfo_HubTypesStatusBase.swift */,
+				A946FA6C296E70E400E2E4A8 /* UserInfo_LampStatus.swift */,
+				A946FA6A296E70E400E2E4A8 /* UserInfo_SensorStatus.swift */,
+			);
+			path = DeviceStatus;
+			sourceTree = "<group>";
+		};
+		A946FA8A296E719800E2E4A8 /* CoreDataInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A946FA95296E71C100E2E4A8 /* CoreDataInfo_StoreConnectedLamp.swift */,
+				A946FA8E296E71C000E2E4A8 /* CoreDataInfo_StoreConnectedSensor.swift */,
+				A946FA8B296E71C000E2E4A8 /* CoreDataInfo_StoreDeviceNoti.swift */,
+				A946FA94296E71C100E2E4A8 /* CoreDataInfo_StoreDeviceNotiReady.swift */,
+				A946FA91296E71C100E2E4A8 /* CoreDataInfo_StoreDiaperSensingLog.swift */,
+				A946FA96296E71C100E2E4A8 /* CoreDataInfo_StoreHubGraph.swift */,
+				A946FA8C296E71C000E2E4A8 /* CoreDataInfo_StoreLampGraph.swift */,
+				A946FA90296E71C100E2E4A8 /* CoreDataInfo_StoreNewAlarm.swift */,
+				A946FA8D296E71C000E2E4A8 /* CoreDataInfo_StoreSensorMovGraph.swift */,
+				A946FA92296E71C100E2E4A8 /* CoreDataInfo_StoreSensorVocGraph.swift */,
+				A946FA8F296E71C100E2E4A8 /* CoreDataInfo_StoreShareMemberNoti.swift */,
+				A946FA93296E71C100E2E4A8 /* CoreDataInfo.swift */,
+			);
+			path = CoreDataInfo;
+			sourceTree = "<group>";
+		};
+		A946FACF296E72ED00E2E4A8 /* Ble */ = {
+			isa = PBXGroup;
+			children = (
+				A946FAD1296E730B00E2E4A8 /* Peripheral */,
+				A946FAE3296E734000E2E4A8 /* BleConnectionManager.swift */,
+			);
+			path = Ble;
+			sourceTree = "<group>";
+		};
+		A946FAD0296E72F400E2E4A8 /* BleLamp */ = {
+			isa = PBXGroup;
+			children = (
+				A946FAE5296E735D00E2E4A8 /* Peripheral */,
+				A946FAF5296E73A800E2E4A8 /* BleConnectionLampManager.swift */,
+			);
+			path = BleLamp;
+			sourceTree = "<group>";
+		};
+		A946FAD1296E730B00E2E4A8 /* Peripheral */ = {
+			isa = PBXGroup;
+			children = (
+				A946FAD2296E731D00E2E4A8 /* Packet */,
+				A946FADE296E733500E2E4A8 /* HubConnectionController.swift */,
+				A946FADF296E733500E2E4A8 /* Peripheral_Controller.swift */,
+				A946FADD296E733500E2E4A8 /* PeripheralCallback.swift */,
+			);
+			path = Peripheral;
+			sourceTree = "<group>";
+		};
+		A946FAD2296E731D00E2E4A8 /* Packet */ = {
+			isa = PBXGroup;
+			children = (
+				A946FAD3296E732B00E2E4A8 /* BlePacket_Commend.swift */,
+				A946FAD7296E732C00E2E4A8 /* BlePacket_Controller.swift */,
+				A946FAD6296E732C00E2E4A8 /* BlePacket_Request.swift */,
+				A946FAD5296E732C00E2E4A8 /* BlePacket_SensorToLocal.swift */,
+				A946FAD4296E732B00E2E4A8 /* BlePacket_Utility.swift */,
+			);
+			path = Packet;
+			sourceTree = "<group>";
+		};
+		A946FAE5296E735D00E2E4A8 /* Peripheral */ = {
+			isa = PBXGroup;
+			children = (
+				A946FAE6296E737100E2E4A8 /* Packet */,
+				A946FAF1296E738900E2E4A8 /* LampConnectionController.swift */,
+				A946FAEF296E738900E2E4A8 /* PeripheralLamp_Controller.swift */,
+				A946FAF0296E738900E2E4A8 /* PeripheralLampCallback.swift */,
+			);
+			path = Peripheral;
+			sourceTree = "<group>";
+		};
+		A946FAE6296E737100E2E4A8 /* Packet */ = {
+			isa = PBXGroup;
+			children = (
+				A946FAEA296E737E00E2E4A8 /* BleLampPacket_Commend.swift */,
+				A946FAE8296E737E00E2E4A8 /* BleLampPacket_Controller.swift */,
+				A946FAE9296E737E00E2E4A8 /* BleLampPacket_Requst.swift */,
+				A946FAE7296E737E00E2E4A8 /* BleLampPacket_SensorToLocal.swift */,
+			);
+			path = Packet;
+			sourceTree = "<group>";
+		};
+		A946FAF7296E742F00E2E4A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A946FAF9296E744000E2E4A8 /* DeviceDetailInfo.swift */,
+				A946FAFA296E744100E2E4A8 /* HubStatusInfo.swift */,
+				A946FAFB296E744100E2E4A8 /* HubTypesStatusInfoBase.swift */,
+				A946FAFC296E744100E2E4A8 /* LampStatusInfo.swift */,
+				A946FAF8296E744000E2E4A8 /* SensorStatusInfo.swift */,
+			);
+			name = Models;
+			path = ../Models;
+			sourceTree = "<group>";
+		};
+		A946FB02296E74D800E2E4A8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A946FB18296E74EC00E2E4A8 /* StoreConnectedLamp+CoreDataClass.swift */,
+				A946FB13296E74EC00E2E4A8 /* StoreConnectedLamp+CoreDataProperties.swift */,
+				A946FB04296E74EA00E2E4A8 /* StoreConnectedSensor+CoreDataClass.swift */,
+				A946FB0A296E74EB00E2E4A8 /* StoreConnectedSensor+CoreDataProperties.swift */,
+				A946FB14296E74EC00E2E4A8 /* StoreDeviceNoti+CoreDataClass.swift */,
+				A946FB11296E74EB00E2E4A8 /* StoreDeviceNoti+CoreDataProperties.swift */,
+				A946FB08296E74EB00E2E4A8 /* StoreDeviceNotiReady+CoreDataClass.swift */,
+				A946FB15296E74EC00E2E4A8 /* StoreDeviceNotiReady+CoreDataProperties.swift */,
+				A946FB12296E74EC00E2E4A8 /* StoreDiaperSensingLog+CoreDataClass.swift */,
+				A946FB0C296E74EB00E2E4A8 /* StoreDiaperSensingLog+CoreDataProperties.swift */,
+				A946FB0B296E74EB00E2E4A8 /* StoreHubGraph+CoreDataClass.swift */,
+				A946FB05296E74EA00E2E4A8 /* StoreHubGraph+CoreDataProperties.swift */,
+				A946FB16296E74EC00E2E4A8 /* StoreLampGraph+CoreDataClass.swift */,
+				A946FB03296E74EA00E2E4A8 /* StoreLampGraph+CoreDataProperties.swift */,
+				A946FB0D296E74EB00E2E4A8 /* StoreNewAlarm+CoreDataClass.swift */,
+				A946FB07296E74EB00E2E4A8 /* StoreNewAlarm+CoreDataProperties.swift */,
+				A946FB0E296E74EB00E2E4A8 /* StoreSensorMovGraph+CoreDataClass.swift */,
+				A946FB10296E74EB00E2E4A8 /* StoreSensorMovGraph+CoreDataProperties.swift */,
+				A946FB06296E74EA00E2E4A8 /* StoreSensorVocGraph+CoreDataClass.swift */,
+				A946FB17296E74EC00E2E4A8 /* StoreSensorVocGraph+CoreDataProperties.swift */,
+				A946FB0F296E74EB00E2E4A8 /* StoreShareMemberNoti+CoreDataClass.swift */,
+				A946FB09296E74EB00E2E4A8 /* StoreShareMemberNoti+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A946FB31296E867900E2E4A8 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		A946FB32296E929E00E2E4A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A946FB35296E92C000E2E4A8 /* Packet */,
+				A946FB33296E92BE00E2E4A8 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A946FB35296E92C000E2E4A8 /* Packet */ = {
+			isa = PBXGroup;
+			children = (
+				A946FB38296E92D800E2E4A8 /* Packet_Account.swift */,
+				A946FB3A296E92D800E2E4A8 /* Packet_Base.swift */,
+				A946FB39296E92D800E2E4A8 /* Packet_Cloud.swift */,
+				A946FB37296E92D800E2E4A8 /* Packet_Device.swift */,
+				A946FB36296E92D800E2E4A8 /* Packet_DeviceWithWidget.swift */,
+			);
+			path = Packet;
+			sourceTree = "<group>";
+		};
 		A9AAD9F8296C098E003D6BBF /* Device */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +512,10 @@
 		A9AAD9FF296C21EC003D6BBF /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
+				A946FB32296E929E00E2E4A8 /* Network */,
+				A946FB31296E867900E2E4A8 /* BaseController */,
+				A946FB02296E74D800E2E4A8 /* CoreData */,
+				A946FAF7296E742F00E2E4A8 /* Models */,
 				A9AADA08296C22EB003D6BBF /* Utils */,
 				A9AADA05296C225A003D6BBF /* Models */,
 				A9AADA00296C21FE003D6BBF /* Manager */,
@@ -155,8 +526,21 @@
 		A9AADA00296C21FE003D6BBF /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				A9AAD9FA296C1FE4003D6BBF /* Config.swift */,
+				A946FACF296E72ED00E2E4A8 /* Ble */,
+				A946FAD0296E72F400E2E4A8 /* BleLamp */,
 				A9AADA01296C2207003D6BBF /* DataManager */,
+				A9AAD9FA296C1FE4003D6BBF /* Config.swift */,
+				A946FA79296E715800E2E4A8 /* DownloadManager.swift */,
+				A946FA77296E715800E2E4A8 /* LocalizedManager.swift */,
+				A946FA78296E715800E2E4A8 /* NativePopupManager.swift */,
+				A946FA7B296E715900E2E4A8 /* NotificationManager.swift */,
+				A946FA74296E715800E2E4A8 /* PopupManager.swift */,
+				A946FA7E296E715900E2E4A8 /* ReportManager.swift */,
+				A946FA7A296E715800E2E4A8 /* ScreenAnalyticsManager.swift */,
+				A946FA76296E715800E2E4A8 /* SoundManager.swift */,
+				A946FA7C296E715900E2E4A8 /* SystemManager.swift */,
+				A946FA75296E715800E2E4A8 /* TimerManager.swift */,
+				A946FA7D296E715900E2E4A8 /* UIManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -165,8 +549,23 @@
 			isa = PBXGroup;
 			children = (
 				A9AADA0D296C2402003D6BBF /* DataController */,
+				A946FABC296E728B00E2E4A8 /* DataController_DeviceNoti.swift */,
+				A946FABF296E728B00E2E4A8 /* DataController_DeviceNotiReady.swift */,
+				A946FABA296E728B00E2E4A8 /* DataController_DeviceStatus.swift */,
+				A946FABB296E728B00E2E4A8 /* DataController_DiaperSensingLog.swift */,
+				A946FAB8296E728A00E2E4A8 /* DataController_HubGraph.swift */,
+				A946FABE296E728B00E2E4A8 /* DataController_LampGraph.swift */,
+				A946FAB7296E728A00E2E4A8 /* DataController_SensorMovGraph.swift */,
+				A946FAB5296E728A00E2E4A8 /* DataController_SensorVocGraph.swift */,
+				A946FAB6296E728A00E2E4A8 /* DataController_ShareMemberNoti.swift */,
+				A946FAB9296E728A00E2E4A8 /* DataController_StoreConnectedLamp.swift */,
+				A946FAC1296E728B00E2E4A8 /* DataController_StoreConnectedSensor.swift */,
+				A946FABD296E728B00E2E4A8 /* DataController_Widget.swift */,
+				A946FAC0296E728B00E2E4A8 /* DataController.swift */,
+				A946FA8A296E719800E2E4A8 /* CoreDataInfo */,
 				A9AADA02296C2212003D6BBF /* UserInfo */,
 				A9AADA0B296C23D1003D6BBF /* DataManager.swift */,
+				A946FA72296E710B00E2E4A8 /* ConfigData.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -174,7 +573,23 @@
 		A9AADA02296C2212003D6BBF /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				A9AADA03296C2239003D6BBF /* BleInfo.swift */,
+				A946FA67296E70D100E2E4A8 /* DeviceStatus */,
+				A946FA43296E6F3700E2E4A8 /* UserInfo.swift */,
+				A946FA45296E6F9B00E2E4A8 /* UserInfo_ConnectSensor.swift */,
+				A946FA47296E6FEC00E2E4A8 /* UserInfo_ShareMember.swift */,
+				A946FA61296E706500E2E4A8 /* UserInfo_ShareDevice.swift */,
+				A946FA49296E703500E2E4A8 /* UserInfo_ConfigData.swift */,
+				A946FA4E296E703500E2E4A8 /* UserInfo_ConnectLamp.swift */,
+				A946FA4B296E703500E2E4A8 /* UserInfo_DeviceNoti.swift */,
+				A946FA4C296E703500E2E4A8 /* UserInfo_DeviceNotiReady.swift */,
+				A946FA4D296E703500E2E4A8 /* UserInfo_HubGraph.swift */,
+				A946FA53296E703500E2E4A8 /* UserInfo_LampGraph.swift */,
+				A946FA54296E703500E2E4A8 /* UserInfo_NewAlarm.swift */,
+				A946FA4F296E703500E2E4A8 /* UserInfo_SensorMovGraph.swift */,
+				A946FA50296E703500E2E4A8 /* UserInfo_SensorVocGraph.swift */,
+				A946FA51296E703500E2E4A8 /* UserInfo_ShareMemberNoti.swift */,
+				A946FA52296E703500E2E4A8 /* UserInfo_StoreConnectedLamp.swift */,
+				A946FA4A296E703500E2E4A8 /* UserInfo_StoreConnectedSensor.swift */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
@@ -198,21 +613,9 @@
 		A9AADA0D296C2402003D6BBF /* DataController */ = {
 			isa = PBXGroup;
 			children = (
-				A9AADA2D296C27CA003D6BBF /* NewAlarm */,
-				A9AADA0E296C2411003D6BBF /* DataController.swift */,
-				A9AADA29296C275E003D6BBF /* DataController_SensorVocGraph.swift */,
-				A9AADA17296C2619003D6BBF /* DataController_DeviceNoti.swift */,
-				A9AADA19296C268D003D6BBF /* DataController_StoreConnectedSensor.swift */,
+				A9AADA30296C27FC003D6BBF /* Device */,
 				A9AADA10296C2449003D6BBF /* UserInfo */,
-				A9AADA1B296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift */,
-				A9AADA1D296C26CF003D6BBF /* DataController_DeviceStatus.swift */,
-				A9AADA1F296C26EC003D6BBF /* DataController_ShareMemberNoti.swift */,
-				A9AADA21296C2702003D6BBF /* DataController_HubGraph.swift */,
-				A9AADA23296C2722003D6BBF /* DataController_LampGraph.swift */,
-				A9AADA25296C2738003D6BBF /* DataController_Widget.swift */,
-				A9AADA27296C2749003D6BBF /* DataController_SensorMovGraph.swift */,
-				A9AADA2B296C277B003D6BBF /* DataController_DiaperSensingLog.swift */,
-				A9AADA33296C282A003D6BBF /* DataController_DeviceNotiReady.swift */,
+				A9AADA2D296C27CA003D6BBF /* NewAlarm */,
 			);
 			path = DataController;
 			sourceTree = "<group>";
@@ -230,8 +633,11 @@
 		A9AADA2D296C27CA003D6BBF /* NewAlarm */ = {
 			isa = PBXGroup;
 			children = (
-				A9AADA30296C27FC003D6BBF /* Device */,
-				A9AADA2E296C27D5003D6BBF /* DataController_NewAlarm.swift */,
+				A946FAAF296E723300E2E4A8 /* DataController_NewAlarm_HubFirmware.swift */,
+				A946FAAE296E723300E2E4A8 /* DataController_NewAlarm_LampFirmware.swift */,
+				A946FAAD296E723300E2E4A8 /* DataController_NewAlarm_Noti.swift */,
+				A946FAAC296E723300E2E4A8 /* DataController_NewAlarm_SensorFirmware.swift */,
+				A946FAAB296E723300E2E4A8 /* DataController_NewAlarm.swift */,
 			);
 			path = NewAlarm;
 			sourceTree = "<group>";
@@ -240,6 +646,10 @@
 			isa = PBXGroup;
 			children = (
 				A9AADA31296C280F003D6BBF /* DataContoller_Device.swift */,
+				A946FAA5296E71EB00E2E4A8 /* DataController_Hub.swift */,
+				A946FAA4296E71EA00E2E4A8 /* DataController_HubTypesBase.swift */,
+				A946FAA3296E71EA00E2E4A8 /* DataController_Lamp.swift */,
+				A946FAA6296E71EB00E2E4A8 /* DataController_Sensor.swift */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -250,6 +660,8 @@
 				A9B958C028D03A2E00FFDC08 /* Display */,
 				A9B958A828D0375400FFDC08 /* MECS */,
 				A9B958A728D0375400FFDC08 /* Products */,
+				C4A2EF9F88C9772B627F3FA4 /* Pods */,
+				ABC5F27DB877CB5CE29ABBAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,7 +679,6 @@
 				A9AAD9FF296C21EC003D6BBF /* Scripts */,
 				A9B958AB28D0375400FFDC08 /* SceneDelegate.swift */,
 				A9B958A928D0375400FFDC08 /* AppDelegate.swift */,
-				A9CD69ED28D86D3B002DD5F9 /* Model */,
 				A9CD69EE28D86D4E002DD5F9 /* View */,
 				A9CD69EF28D86D56002DD5F9 /* Controller */,
 				A9B958B528D0375600FFDC08 /* Assets.xcassets */,
@@ -288,17 +699,6 @@
 			path = Display;
 			sourceTree = "<group>";
 		};
-		A9CD69ED28D86D3B002DD5F9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A9662A0E28DB0C5400E0666E /* Sensor.swift */,
-				A9662A1028DB0C5F00E0666E /* Hub.swift */,
-				A9662A1228DB10C500E0666E /* MainHomeTableCellSensor.swift */,
-				A9A2D4EA28DC554700511F68 /* Wifi.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		A9CD69EE28D86D4E002DD5F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +715,7 @@
 				A9B958AD28D0375400FFDC08 /* ViewController.swift */,
 				A9CD69F928D9C17B002DD5F9 /* MainHomeViewController.swift */,
 				A9A2D51C28DD8B8000511F68 /* MainHomeSideViewController.swift */,
+				A946FB2F296E863C00E2E4A8 /* initViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -329,6 +730,23 @@
 			path = TableCell;
 			sourceTree = "<group>";
 		};
+		ABC5F27DB877CB5CE29ABBAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D87CA3D6CB26AF807103579E /* Pods_MECS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4A2EF9F88C9772B627F3FA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25E37A4EF7EB9BE3BBF008E1 /* Pods-MECS.debug.xcconfig */,
+				410DF41D33204E80B8D60667 /* Pods-MECS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -336,9 +754,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9B958BD28D0375600FFDC08 /* Build configuration list for PBXNativeTarget "MECS" */;
 			buildPhases = (
+				836445AA1E4E7FA85B063D02 /* [CP] Check Pods Manifest.lock */,
 				A9B958A228D0375400FFDC08 /* Sources */,
 				A9B958A328D0375400FFDC08 /* Frameworks */,
 				A9B958A428D0375400FFDC08 /* Resources */,
+				C03A22C818824BCE27BF40D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -397,54 +817,195 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		836445AA1E4E7FA85B063D02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MECS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C03A22C818824BCE27BF40D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MECS/Pods-MECS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MECS/Pods-MECS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MECS/Pods-MECS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9B958A228D0375400FFDC08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9B958AE28D0375400FFDC08 /* ViewController.swift in Sources */,
+				A946FA7F296E715900E2E4A8 /* PopupManager.swift in Sources */,
 				A9CD69F828D86F4E002DD5F9 /* MainHomeHubTableViewCell.swift in Sources */,
-				A9AADA22296C2702003D6BBF /* DataController_HubGraph.swift in Sources */,
-				A9AADA2C296C277B003D6BBF /* DataController_DiaperSensingLog.swift in Sources */,
-				A9AADA1E296C26CF003D6BBF /* DataController_DeviceStatus.swift in Sources */,
-				A9AADA20296C26EC003D6BBF /* DataController_ShareMemberNoti.swift in Sources */,
-				A9AADA28296C2749003D6BBF /* DataController_SensorMovGraph.swift in Sources */,
-				A9AADA2F296C27D5003D6BBF /* DataController_NewAlarm.swift in Sources */,
+				A946FAFF296E744100E2E4A8 /* HubStatusInfo.swift in Sources */,
+				A946FA9D296E71C100E2E4A8 /* CoreDataInfo_StoreDiaperSensingLog.swift in Sources */,
+				A946FA59296E703500E2E4A8 /* UserInfo_HubGraph.swift in Sources */,
+				A946FAA1296E71C100E2E4A8 /* CoreDataInfo_StoreConnectedLamp.swift in Sources */,
+				A946FADA296E732C00E2E4A8 /* BlePacket_SensorToLocal.swift in Sources */,
+				A946FAA9296E71EB00E2E4A8 /* DataController_Hub.swift in Sources */,
+				A946FA5D296E703500E2E4A8 /* UserInfo_ShareMemberNoti.swift in Sources */,
+				A946FA71296E70E400E2E4A8 /* UserInfo_LampStatus.swift in Sources */,
+				A946FB2D296E74ED00E2E4A8 /* StoreSensorVocGraph+CoreDataProperties.swift in Sources */,
 				A9CD69F628D86F3D002DD5F9 /* MainHomeSensorTableViewCell.swift in Sources */,
+				A946FADC296E732C00E2E4A8 /* BlePacket_Controller.swift in Sources */,
+				A946FA70296E70E400E2E4A8 /* UserInfo_HubTypesStatusBase.swift in Sources */,
 				A9A2D4E928DC547100511F68 /* WifiSelectViewController.swift in Sources */,
+				A946FA82296E715900E2E4A8 /* LocalizedManager.swift in Sources */,
+				A946FB3E296E92D800E2E4A8 /* Packet_Cloud.swift in Sources */,
 				A9B958B428D0375400FFDC08 /* MECS.xcdatamodeld in Sources */,
+				A946FB01296E744100E2E4A8 /* LampStatusInfo.swift in Sources */,
 				A9A0D1C128E43A5600230653 /* DeviceViewController_3.swift in Sources */,
+				A946FAC4296E728B00E2E4A8 /* DataController_SensorMovGraph.swift in Sources */,
+				A946FA89296E715900E2E4A8 /* ReportManager.swift in Sources */,
 				A9AADA14296C2522003D6BBF /* DataController_ShareMember.swift in Sources */,
-				A9AADA24296C2722003D6BBF /* DataController_LampGraph.swift in Sources */,
-				A9662A0F28DB0C5400E0666E /* Sensor.swift in Sources */,
-				A9662A1128DB0C5F00E0666E /* Hub.swift in Sources */,
-				A9AADA1C296C26BB003D6BBF /* DataController_StoreConnectedLamp.swift in Sources */,
+				A946FA98296E71C100E2E4A8 /* CoreDataInfo_StoreLampGraph.swift in Sources */,
+				A946FA48296E6FEC00E2E4A8 /* UserInfo_ShareMember.swift in Sources */,
+				A946FB21296E74ED00E2E4A8 /* StoreHubGraph+CoreDataClass.swift in Sources */,
+				A946FA56296E703500E2E4A8 /* UserInfo_StoreConnectedSensor.swift in Sources */,
+				A946FAFE296E744100E2E4A8 /* DeviceDetailInfo.swift in Sources */,
+				A946FB3C296E92D800E2E4A8 /* Packet_Device.swift in Sources */,
+				A946FAB0296E723400E2E4A8 /* DataController_NewAlarm.swift in Sources */,
+				A946FA6F296E70E400E2E4A8 /* UserInfo_SensorStatus.swift in Sources */,
+				A946FB3D296E92D800E2E4A8 /* Packet_Account.swift in Sources */,
+				A946FAE4296E734000E2E4A8 /* BleConnectionManager.swift in Sources */,
+				A946FA5A296E703500E2E4A8 /* UserInfo_ConnectLamp.swift in Sources */,
+				A946FB2B296E74ED00E2E4A8 /* StoreDeviceNotiReady+CoreDataProperties.swift in Sources */,
+				A946FB1D296E74ED00E2E4A8 /* StoreNewAlarm+CoreDataProperties.swift in Sources */,
+				A946FA81296E715900E2E4A8 /* SoundManager.swift in Sources */,
+				A946FACA296E728B00E2E4A8 /* DataController_Widget.swift in Sources */,
+				A946FA6D296E70E400E2E4A8 /* UserInfo_HubStatus.swift in Sources */,
+				A946FA9A296E71C100E2E4A8 /* CoreDataInfo_StoreConnectedSensor.swift in Sources */,
+				A946FADB296E732C00E2E4A8 /* BlePacket_Request.swift in Sources */,
+				A946FA83296E715900E2E4A8 /* NativePopupManager.swift in Sources */,
+				A946FA99296E71C100E2E4A8 /* CoreDataInfo_StoreSensorMovGraph.swift in Sources */,
+				A946FA86296E715900E2E4A8 /* NotificationManager.swift in Sources */,
 				A9A0D1BF28E4391100230653 /* DeviceViewController_2.swift in Sources */,
+				A946FB20296E74ED00E2E4A8 /* StoreConnectedSensor+CoreDataProperties.swift in Sources */,
 				A9AADA32296C280F003D6BBF /* DataContoller_Device.swift in Sources */,
+				A946FAF2296E738900E2E4A8 /* PeripheralLamp_Controller.swift in Sources */,
+				A946FA9E296E71C100E2E4A8 /* CoreDataInfo_StoreSensorVocGraph.swift in Sources */,
 				A9CD69FA28D9C17B002DD5F9 /* MainHomeViewController.swift in Sources */,
+				A946FA58296E703500E2E4A8 /* UserInfo_DeviceNotiReady.swift in Sources */,
+				A946FA87296E715900E2E4A8 /* SystemManager.swift in Sources */,
+				A946FB26296E74ED00E2E4A8 /* StoreSensorMovGraph+CoreDataProperties.swift in Sources */,
+				A946FAC3296E728B00E2E4A8 /* DataController_ShareMemberNoti.swift in Sources */,
+				A946FA60296E703500E2E4A8 /* UserInfo_NewAlarm.swift in Sources */,
+				A946FAC6296E728B00E2E4A8 /* DataController_StoreConnectedLamp.swift in Sources */,
+				A946FB1C296E74ED00E2E4A8 /* StoreSensorVocGraph+CoreDataClass.swift in Sources */,
+				A946FACC296E728B00E2E4A8 /* DataController_DeviceNotiReady.swift in Sources */,
+				A946FB2E296E74ED00E2E4A8 /* StoreConnectedLamp+CoreDataClass.swift in Sources */,
+				A946FAEB296E737E00E2E4A8 /* BleLampPacket_SensorToLocal.swift in Sources */,
+				A946FA9C296E71C100E2E4A8 /* CoreDataInfo_StoreNewAlarm.swift in Sources */,
+				A946FB28296E74ED00E2E4A8 /* StoreDiaperSensingLog+CoreDataClass.swift in Sources */,
+				A946FB1F296E74ED00E2E4A8 /* StoreShareMemberNoti+CoreDataProperties.swift in Sources */,
+				A946FAEE296E737F00E2E4A8 /* BleLampPacket_Commend.swift in Sources */,
+				A946FAA8296E71EB00E2E4A8 /* DataController_HubTypesBase.swift in Sources */,
+				A946FAB4296E723400E2E4A8 /* DataController_NewAlarm_HubFirmware.swift in Sources */,
+				A946FA6E296E70E400E2E4A8 /* UserInfo_DeviceStatus.swift in Sources */,
+				A946FA44296E6F3700E2E4A8 /* UserInfo.swift in Sources */,
+				A946FACE296E728B00E2E4A8 /* DataController_StoreConnectedSensor.swift in Sources */,
+				A946FAA2296E71C100E2E4A8 /* CoreDataInfo_StoreHubGraph.swift in Sources */,
+				A946FB1E296E74ED00E2E4A8 /* StoreDeviceNotiReady+CoreDataClass.swift in Sources */,
+				A946FB3B296E92D800E2E4A8 /* Packet_DeviceWithWidget.swift in Sources */,
+				A946FA62296E706500E2E4A8 /* UserInfo_ShareDevice.swift in Sources */,
+				A946FAA0296E71C100E2E4A8 /* CoreDataInfo_StoreDeviceNotiReady.swift in Sources */,
 				A9CD69F228D86E15002DD5F9 /* WifiTableViewCell.swift in Sources */,
-				A9AADA2A296C275E003D6BBF /* DataController_SensorVocGraph.swift in Sources */,
-				A9AADA34296C282A003D6BBF /* DataController_DeviceNotiReady.swift in Sources */,
-				A9AADA0F296C2411003D6BBF /* DataController.swift in Sources */,
+				A946FB2C296E74ED00E2E4A8 /* StoreLampGraph+CoreDataClass.swift in Sources */,
+				A946FA84296E715900E2E4A8 /* DownloadManager.swift in Sources */,
+				A946FB3F296E92D800E2E4A8 /* Packet_Base.swift in Sources */,
+				A946FB34296E92BE00E2E4A8 /* NetworkManager.swift in Sources */,
+				A946FAE2296E733500E2E4A8 /* Peripheral_Controller.swift in Sources */,
+				A946FA5E296E703500E2E4A8 /* UserInfo_StoreConnectedLamp.swift in Sources */,
+				A946FA9F296E71C100E2E4A8 /* CoreDataInfo.swift in Sources */,
+				A946FA9B296E71C100E2E4A8 /* CoreDataInfo_StoreShareMemberNoti.swift in Sources */,
+				A946FB30296E863C00E2E4A8 /* initViewController.swift in Sources */,
+				A946FAF6296E73A800E2E4A8 /* BleConnectionLampManager.swift in Sources */,
 				A9B958AA28D0375400FFDC08 /* AppDelegate.swift in Sources */,
+				A946FAA7296E71EB00E2E4A8 /* DataController_Lamp.swift in Sources */,
+				A946FAED296E737F00E2E4A8 /* BleLampPacket_Requst.swift in Sources */,
 				A9A2D51D28DD8B8000511F68 /* MainHomeSideViewController.swift in Sources */,
 				A9AADA0A296C22F6003D6BBF /* Debug.swift in Sources */,
+				A946FAC8296E728B00E2E4A8 /* DataController_DiaperSensingLog.swift in Sources */,
+				A946FB00296E744100E2E4A8 /* HubTypesStatusInfoBase.swift in Sources */,
+				A946FA97296E71C100E2E4A8 /* CoreDataInfo_StoreDeviceNoti.swift in Sources */,
+				A946FA5C296E703500E2E4A8 /* UserInfo_SensorVocGraph.swift in Sources */,
+				A946FB24296E74ED00E2E4A8 /* StoreSensorMovGraph+CoreDataClass.swift in Sources */,
 				A9C2A69F28FCF3E7000EB06D /* DeviceViewController_4.swift in Sources */,
-				A9AADA18296C2619003D6BBF /* DataController_DeviceNoti.swift in Sources */,
-				A9AADA26296C2738003D6BBF /* DataController_Widget.swift in Sources */,
+				A946FB27296E74ED00E2E4A8 /* StoreDeviceNoti+CoreDataProperties.swift in Sources */,
+				A946FA55296E703500E2E4A8 /* UserInfo_ConfigData.swift in Sources */,
+				A946FA5B296E703500E2E4A8 /* UserInfo_SensorMovGraph.swift in Sources */,
+				A946FB29296E74ED00E2E4A8 /* StoreConnectedLamp+CoreDataProperties.swift in Sources */,
+				A946FAE0296E733500E2E4A8 /* PeripheralCallback.swift in Sources */,
+				A946FAB2296E723400E2E4A8 /* DataController_NewAlarm_Noti.swift in Sources */,
+				A946FAF3296E738900E2E4A8 /* PeripheralLampCallback.swift in Sources */,
+				A946FA85296E715900E2E4A8 /* ScreenAnalyticsManager.swift in Sources */,
+				A946FAC2296E728B00E2E4A8 /* DataController_SensorVocGraph.swift in Sources */,
+				A946FB25296E74ED00E2E4A8 /* StoreShareMemberNoti+CoreDataClass.swift in Sources */,
+				A946FA5F296E703500E2E4A8 /* UserInfo_LampGraph.swift in Sources */,
+				A946FA88296E715900E2E4A8 /* UIManager.swift in Sources */,
+				A946FB23296E74ED00E2E4A8 /* StoreNewAlarm+CoreDataClass.swift in Sources */,
+				A946FB2A296E74ED00E2E4A8 /* StoreDeviceNoti+CoreDataClass.swift in Sources */,
+				A946FACB296E728B00E2E4A8 /* DataController_LampGraph.swift in Sources */,
 				A9AADA07296C2288003D6BBF /* SensorStatusInfo.swift in Sources */,
 				A9C2A6A128FCF49B000EB06D /* DeviceViewController_6.swift in Sources */,
-				A9AADA04296C2239003D6BBF /* BleInfo.swift in Sources */,
-				A9AADA1A296C268D003D6BBF /* DataController_StoreConnectedSensor.swift in Sources */,
+				A946FAB3296E723400E2E4A8 /* DataController_NewAlarm_LampFirmware.swift in Sources */,
 				A9AAD9FE296C205D003D6BBF /* WifiSelectView.swift in Sources */,
 				A9B958AC28D0375400FFDC08 /* SceneDelegate.swift in Sources */,
-				A9A2D4EB28DC554700511F68 /* Wifi.swift in Sources */,
+				A946FA57296E703500E2E4A8 /* UserInfo_DeviceNoti.swift in Sources */,
+				A946FAB1296E723400E2E4A8 /* DataController_NewAlarm_SensorFirmware.swift in Sources */,
+				A946FAE1296E733500E2E4A8 /* HubConnectionController.swift in Sources */,
+				A946FAC9296E728B00E2E4A8 /* DataController_DeviceNoti.swift in Sources */,
+				A946FACD296E728B00E2E4A8 /* DataController.swift in Sources */,
+				A946FAEC296E737E00E2E4A8 /* BleLampPacket_Controller.swift in Sources */,
+				A946FB1B296E74EC00E2E4A8 /* StoreHubGraph+CoreDataProperties.swift in Sources */,
+				A946FA80296E715900E2E4A8 /* TimerManager.swift in Sources */,
+				A946FAF4296E738900E2E4A8 /* LampConnectionController.swift in Sources */,
+				A946FAAA296E71EB00E2E4A8 /* DataController_Sensor.swift in Sources */,
 				A9AADA16296C2541003D6BBF /* DataController_ShareDevice.swift in Sources */,
+				A946FAC7296E728B00E2E4A8 /* DataController_DeviceStatus.swift in Sources */,
+				A946FAC5296E728B00E2E4A8 /* DataController_HubGraph.swift in Sources */,
+				A946FB22296E74ED00E2E4A8 /* StoreDiaperSensingLog+CoreDataProperties.swift in Sources */,
+				A946FB19296E74EC00E2E4A8 /* StoreLampGraph+CoreDataProperties.swift in Sources */,
 				A9AADA0C296C23D1003D6BBF /* DataManager.swift in Sources */,
 				A9AAD9FB296C1FE4003D6BBF /* Config.swift in Sources */,
+				A946FA73296E710B00E2E4A8 /* ConfigData.swift in Sources */,
+				A946FA46296E6F9B00E2E4A8 /* UserInfo_ConnectSensor.swift in Sources */,
 				A9A0D1BD28E4387400230653 /* DeviceViewController_1.swift in Sources */,
-				A9662A1328DB10C500E0666E /* MainHomeTableCellSensor.swift in Sources */,
+				A946FAFD296E744100E2E4A8 /* SensorStatusInfo.swift in Sources */,
 				A9AADA12296C246A003D6BBF /* DataController_UserInfo.swift in Sources */,
+				A946FAD8296E732C00E2E4A8 /* BlePacket_Commend.swift in Sources */,
+				A946FB1A296E74EC00E2E4A8 /* StoreConnectedSensor+CoreDataClass.swift in Sources */,
+				A946FAD9296E732C00E2E4A8 /* BlePacket_Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +1147,7 @@
 		};
 		A9B958BE28D0375600FFDC08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E37A4EF7EB9BE3BBF008E1 /* Pods-MECS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -615,6 +1177,7 @@
 		};
 		A9B958BF28D0375600FFDC08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 410DF41D33204E80B8D60667 /* Pods-MECS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
